@@ -2,11 +2,11 @@
 
 ## Prevent Overﬁtting
 
-#### Cross validation \(refer note in part1\)
+#### Cross validation (refer note in part1)
 
 Regularization
 
-Key idea: deﬁne ![](.gitbook/assets/120%20%281%29.png) s.t. we trade-oﬀ between ﬁtting the data and keeping model simple, the regularization term penalize the magnitude of the coeﬃcients
+Key idea: deﬁne ![](<.gitbook/assets/120 (1).png>) s.t. we trade-oﬀ between ﬁtting the data and keeping model simple, the regularization term penalize the magnitude of the coeﬃcients
 
 L1 regularization & L2 regularization
 
@@ -14,15 +14,15 @@ can be interpreted as MAP estimation of the parameters ridge regression need sta
 
 Don't regularize bias term. Because otherwise the learning algorithms wouldn't be invariant to a shift in the y- values
 
-whitening data \(subtract mean and divide by variance\). For regularization, this helps all the features be penalized in the same units
+whitening data (subtract mean and divide by variance). For regularization, this helps all the features be penalized in the same units
 
 [https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
 
 #### Reduce dimension
 
-PCA \(linear dimensionality reduction\)
+PCA (linear dimensionality reduction)
 
-t-SNE \(nonlinear dimensinality reduction\)
+t-SNE (nonlinear dimensinality reduction)
 
 ## Resampling
 
@@ -40,9 +40,9 @@ Classiﬁcation: accuracy, recall, AUC, precision, f1 score, misclassiﬁcation 
 
 1. business goal
 
-for classiﬁcation problem, if the data is unbalanced, we need to consider what type of error we care more credit card fraud: we don't want to falsely classifed people as fraud -&gt; low FPR
+for classiﬁcation problem, if the data is unbalanced, we need to consider what type of error we care more credit card fraud: we don't want to falsely classifed people as fraud -> low FPR
 
-1. distribution of the target variable \(imbalance?\)
+1. distribution of the target variable (imbalance?)
 2. metric to optimize for
 
 Example: detecting fraud - classiﬁcation; want to make sure catch fraud transactions; imbalance dataset
@@ -53,7 +53,7 @@ Random undersampling and oversampling
 
 Undersampling and oversampling using imbalanced-learn
 
-imbalanced-learn\( \) is a Python Package to tackle the curse of imbalanced datasets.
+imbalanced-learn( ) is a Python Package to tackle the curse of imbalanced datasets.
 
 imblearn
 
@@ -77,11 +77,11 @@ i.e. how to make model robust to outliers?
 
 Drop
 
-log-scale transformation \(or other time or transfromation\)
+log-scale transformation (or other time or transfromation)
 
 Winterizing: setting the extrem values of an attribute to some speciﬁed value
 
-Bining: dividing a list of continuous variables into groups \(also leads to loss of information and loss of power\)
+Bining: dividing a list of continuous variables into groups (also leads to loss of information and loss of power)
 
 ### model based methods:
 
@@ -95,19 +95,19 @@ Use models less impacted by outliers, e.g. tree-based methods like RF and GBM; S
 
 Statistical signiﬁcance test
 
-Step 1: using resampling methods \(e.g. k-fold cross-validation\) to generate model result pairs
+Step 1: using resampling methods (e.g. k-fold cross-validation) to generate model result pairs
 
-Step 2: use t test to check if the diﬀerence in the accuracy/f1 socre is statistically signiﬁcant \(however, this violated the t test assumption, becuase k-fold CV results are correlated not independent\)
+Step 2: use t test to check if the diﬀerence in the accuracy/f1 socre is statistically signiﬁcant (however, this violated the t test assumption, becuase k-fold CV results are correlated not independent)
 
-Ways to solve the problem: resample independent data samples; Use McNemar's test; Use a Nonparametric Paired Test \(makes few assumption, such as not assuming that the distribution of the skill scores is Gaussian.\); use estimation statistics \(conﬁdence interval\)
+Ways to solve the problem: resample independent data samples; Use McNemar's test; Use a Nonparametric Paired Test (makes few assumption, such as not assuming that the distribution of the skill scores is Gaussian.); use estimation statistics (conﬁdence interval)
 
 ## Techniques to implement feature selection
 
-\(Why feature selection? reduce overﬁtting, improve accuracy, reduce training time\)
+(Why feature selection? reduce overﬁtting, improve accuracy, reduce training time)
 
 Filter Method
 
-use evaluation criteria from the intrinsic connections between features to score a feature subset correlation matrix \(Pearson correlation\)
+use evaluation criteria from the intrinsic connections between features to score a feature subset correlation matrix (Pearson correlation)
 
 correlation with output
 
@@ -129,9 +129,9 @@ Wrapper Method
 
 Exhaustive search: numberate all possible combinations
 
-RFE: input ML model and \# desired features; use sklearn.feature\_selection.RFE; combine with decision tree/random forest; ﬁnd optimal combination
+RFE: input ML model and # desired features; use sklearn.feature\_selection.RFE; combine with decision tree/random forest; ﬁnd optimal combination
 
-Heuristic search: sequential forward selection\(SFS\), sequential backward selection\(SBS\), greedy algorithms; bidirectional search use SFS and SBS
+Heuristic search: sequential forward selection(SFS), sequential backward selection(SBS), greedy algorithms; bidirectional search use SFS and SBS
 
 Forward selection:start from null model, then add features one by one; not guaranteed to give us the best model
 
@@ -147,7 +147,7 @@ Embedded Method
 
 examine the diﬀerent training iterations of ML model and then rank the importance of each feature based on how much each of the features contributed to the model training
 
-LASSO regularization \(L1\)
+LASSO regularization (L1)
 
 coeﬃcients of features get shrunken if not positively contributing to model training features get automatically discarded by assigning coeﬃcients = 0
 
@@ -185,7 +185,7 @@ If you believe outliers might cause by data entry error, drop them
 
 ### Data Transformation
 
-Normalization/Standardization \(for some models\)
+Normalization/Standardization (for some models)
 
 ![](.gitbook/assets/121.jpeg)
 
@@ -237,9 +237,9 @@ DictVectorizer
 
 Get dummies
 
-pd.get\_dummies\(\)
+pd.get\_dummies()
 
-Notes: Represent categorical features as one-hot encoding introduce multicollinearity problem, which would harm linear regression model. Therefore, we use dummy encoding \(drop one variable after one-hot encoding\) in linear regression.
+Notes: Represent categorical features as one-hot encoding introduce multicollinearity problem, which would harm linear regression model. Therefore, we use dummy encoding (drop one variable after one-hot encoding) in linear regression.
 
 [https://towardsdatascience.com/encoding-categorical-features-21a2651a065c](https://towardsdatascience.com/encoding-categorical-features-21a2651a065c) [https://towardsdatascience.com/one-hot-encoding-multicollinearity-and-the-dummy-variable-trap-b5840be3c41a](https://towardsdatascience.com/one-hot-encoding-multicollinearity-and-the-dummy-variable-trap-b5840be3c41a)
 
@@ -261,7 +261,7 @@ use median trick to pick bandwidth , larger lead to smoother features functions,
 
 Kernel
 
-motivation: need high dimensional representation but might be prohibitively expensive to compute Basic idea: rewrite the algorithm so thant we only work with dot product ![](.gitbook/assets/123%20%281%29.png) of feature vectors; then replace the dot product with a kernel function ![](.gitbook/assets/124.png)
+motivation: need high dimensional representation but might be prohibitively expensive to compute Basic idea: rewrite the algorithm so thant we only work with dot product ![](<.gitbook/assets/123 (1).png>) of feature vectors; then replace the dot product with a kernel function ![](<.gitbook/assets/124 (1).png>)
 
 Can be applied to: perceptron, SVM, ridge regression, k-means, etc.
 
@@ -271,7 +271,7 @@ Neural network
 
 ### Recommender system
 
-Basic idea: make recommendation based on the preferances that other users have indicated for these item \(collaborative ﬁltering, most of entries unknown\)
+Basic idea: make recommendation based on the preferances that other users have indicated for these item (collaborative ﬁltering, most of entries unknown)
 
 User-user/ item-item approaches: by correlation coeﬃcient or cosine similarity
 
@@ -293,7 +293,7 @@ Optimization method:
 
 ### Anomaly detection
 
-For supervised learning, anomalies are what some user labels as anomalies; for unsupervised view, anomalies are outliers \(points of low probability\) in the data
+For supervised learning, anomalies are what some user labels as anomalies; for unsupervised view, anomalies are outliers (points of low probability) in the data
 
 ### K-Means
 
@@ -315,7 +315,7 @@ Setting
 
 ![](.gitbook/assets/130.jpeg)Loss:
 
-![](.gitbook/assets/131.jpeg)Optimizatio method: E\(expection\)M\(maximization\) E step:
+![](.gitbook/assets/131.jpeg)Optimizatio method: E(expection)M(maximization) E step:
 
 M step:
 
@@ -328,4 +328,3 @@ detects anomalies purely based on the fact that anomalies are data points that a
 Isolation Forest algorithm isolates observations by randomly selecting a feature and then randomly selecting a split value between the maximum and minimum values of the selected feature. Here an anomalous point could be separated in a few steps while normal points which are closer could take signiﬁcantly more steps to be segregated.
 
 [https://towardsdatascience.com/anomaly-detection-with-isolation-forest-visualization-23cd75c281e2](https://towardsdatascience.com/anomaly-detection-with-isolation-forest-visualization-23cd75c281e2)
-

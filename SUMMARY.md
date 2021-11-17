@@ -14,6 +14,7 @@
 * [Decision Tree](decision-tree.md)
 * [Dimension Reduction](dimension-reduction.md)
 * [Bootstrap, Bagging, and Boosting](bootstrap-bagging-and-boosting.md)
+* [XGBOOST](xgboost.md)
 * [Multilayer Perceptron](multilayer-perceptron.md)
 * [Time Series Forecasting](time-series-forecasting.md)
 * [Gradient Computation & Automatic Differentiation](gradient-computation-and-automatic-differentiation.md)
@@ -21,4 +22,3 @@
 * [Practical Data Science Techniques](practical-data-science-techniques.md)
 * [Supplemental Notes](untitled-1.md)
 * [Machine Learning ALL](untitled.md)
-

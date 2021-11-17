@@ -16,9 +16,9 @@
 
 ![](.gitbook/assets/215.png)
 
-## Bagging \(Bootstrap aggregating\)
+## Bagging (Bootstrap aggregating)
 
-**Use bootstrap for more accurate prediction \(not just uncertainty\)**
+**Use bootstrap for more accurate prediction (not just uncertainty)**
 
 ### Bagging for regression
 
@@ -51,7 +51,7 @@ Reduce the correlation between decision trees
 
 Feature sub-sampling
 
-only a random subset \(![](.gitbook/assets/220.png)\) of features are available for split at each step \(further reduce the dependence between decision trees\)
+only a random subset (![](.gitbook/assets/220.png)) of features are available for split at each step (further reduce the dependence between decision trees)
 
 ![](.gitbook/assets/221.png)
 
@@ -66,21 +66,21 @@ Features of Random Forest
 * It has methods for balancing error in class population unbalanced data sets.
 * Generated forests can be saved for future use on other data.
 * Prototypes are computed that give information about the relation between the variables and the classification.
-* It computes proximities between pairs of cases that can be used in clustering, locating outliers, or \(by scaling\) give interesting views of the data.
+* It computes proximities between pairs of cases that can be used in clustering, locating outliers, or (by scaling) give interesting views of the data.
 * The capabilities of the above can be extended to unlabeled data, leading to unsupervised clustering, data views and outlier detection.
 * It offers an experimental method for detecting variable interactions
 
-**Random forest does not overfit because each tree is independent and starts from scratch and Random Forest takes the average of all the predictions, which makes the biases cancel each other out. In general, more trees will be resulted in more stable generalization errors.** 
+**Random forest does not overfit because each tree is independent and starts from scratch and Random Forest takes the average of all the predictions, which makes the biases cancel each other out. In general, more trees will be resulted in more stable generalization errors. **
 
-![](.gitbook/assets/image%20%2846%29.png)
+![](<.gitbook/assets/image (81).png>)
 
 **formula prove:**
 
 {% embed url="https://datascience.stackexchange.com/a/2315" %}
 
-\*\*\*\*
+****
 
-### Out of bag \(OOB\) samples
+### Out of bag (OOB) samples
 
 * the instances not included in a bootstrap dataset can be used for validation
 * simultaneous validation of decision trees in a forest
@@ -92,18 +92,18 @@ Features of Random Forest
 
 ![](.gitbook/assets/224.png)
 
-**Out Of Bag \(OOB\)** error can be used for parameter tuning \(e.g., size of the forest\)
+**Out Of Bag (OOB)** error can be used for parameter tuning (e.g., size of the forest)
 
 ## Summary
 
 * Bootstrap is a powerful technique to get **uncertainty estimates**
-* Bootstrap aggregation \(Bagging\) can reduce the variance of unstable models
-* Random forests \(**subsample data and features**\):
+* Bootstrap aggregation (Bagging) can reduce the variance of unstable models
+* Random forests (**subsample data and features**):
 * Bagging + further de-correlation of features at each split
 * **OOB validation instead of CV**
 * destroy interpretability of decision trees
 * perform well in practice
-* can fail if only few relevant features exist \(due to feature-sampling\)
+* can fail if only few relevant features exist (due to feature-sampling)
 
 ## Adaptive bases
 
@@ -123,7 +123,7 @@ Features of Random Forest
 
 ![](.gitbook/assets/229.png)
 
-note that the loss grows faster than the other surrogate losses \(more sensitive to outliers\)
+note that the loss grows faster than the other surrogate losses (more sensitive to outliers)
 
 ![](.gitbook/assets/230.png)
 
@@ -183,17 +183,17 @@ Discrete AdaBoost
 
 two ensemble methods
 
-* bagging & random forests \(reduce variance\)
+* bagging & random forests (reduce variance)
   * produce models with minimal correlation
   * use their average prediction
-* boosting \(reduces the bias of the weak learner\)
+* boosting (reduces the bias of the weak learner)
   * models are added in steps
   * a single cost function is minimized
-  * for exponential loss: interpret as re-weighting the instance \(AdaBoost\)
+  * for exponential loss: interpret as re-weighting the instance (AdaBoost)
   * gradient boosting: ﬁt the weak learner to the negative of the gradient
   * interpretation as L1 regularization for "weak learner"-selection
-  * also related to max-margin classiﬁcation \(for large number of steps T\)
-* random forests and \(gradient\) boosting generally perform very well
+  * also related to max-margin classiﬁcation (for large number of steps T)
+* random forests and (gradient) boosting generally perform very well
 
 ## Some loss functions for gradient boosting
 
@@ -201,7 +201,7 @@ two ensemble methods
 
 ## !!!Boosting vs Bagging
 
-1、Bagging \(bootstrap aggregating\)
+1、Bagging (bootstrap aggregating)
 
 Bagging即套袋法，其算法过程如下：
 
@@ -241,7 +241,7 @@ Boosting：每一轮的训练集不变，只是训练集中每个样例在分类
 
 Bagging：使用均匀取样，每个样例的权重相等
 
-Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。\(分错多的多权重\)
+Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。(分错多的多权重)
 
 3）预测函数：
 
@@ -254,6 +254,17 @@ Boosting：每个弱分类器都有相应的权重，最后voting时， 对于�
 Bagging：各个预测函数可以并行生成
 
 Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。
+
+
+
+### When to choose which
+
+There’s not an outright winner; it depends on the data, the simulation and the circumstances.\
+Bagging and Boosting decrease the variance of your single estimate as they combine several estimates from different models. So the result may be a model with **higher stability**.
+
+If the problem is that the single model gets a very low performance, Bagging will rarely get a **better bias**. However, Boosting could generate a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model.
+
+By contrast, if the difficulty of the single model is **over-fitting**, then Bagging is the best option. Boosting for its part doesn’t help to avoid over-fitting; in fact, this technique is faced with this problem itself. For this reason, Bagging is effective more often than Boosting.
 
 {% embed url="https://www.cnblogs.com/liuwu265/p/4690486.html" %}
 
@@ -272,6 +283,4 @@ Boosting：各个预测函数只能顺序生成，因为后一个模型参数需
 pg. 4
 
 ![](.gitbook/assets/253.png)
-
-
 

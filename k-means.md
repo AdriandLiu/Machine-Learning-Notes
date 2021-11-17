@@ -4,7 +4,7 @@
 
 Hypothesis: ![](.gitbook/assets/94.jpeg)
 
-Loss: ![](.gitbook/assets/95.png)
+Loss: ![](<.gitbook/assets/95 (1).png>)
 
 Optimization method: Lloyd's algorithm
 
@@ -16,7 +16,7 @@ Optimization objective: minimize the average squared Euclidean distance of data 
 
 ### Implementation details
 
-initialization: k-means++: when initializing means, choose ![](.gitbook/assets/97.png) sequentially, sampled with probability proportion to the minimum squared distance to all other centroids
+initialization: k-means++: when initializing means, choose ![](<.gitbook/assets/97 (1).png>) sequentially, sampled with probability proportion to the minimum squared distance to all other centroids
 
 ![](.gitbook/assets/98.jpeg)
 
@@ -24,11 +24,10 @@ Select K
 
 ### Elbow method
 
-Calculate the Within-Cluster-Sum of Squared Errors \(WSS\) for diﬀerent values of k, and choose the k for which WSS becomes ﬁrst starts to diminish. In the plot of WSS-versus-k, this is visible as an elbow.
+Calculate the Within-Cluster-Sum of Squared Errors (WSS) for diﬀerent values of k, and choose the k for which WSS becomes ﬁrst starts to diminish. In the plot of WSS-versus-k, this is visible as an elbow.
 
 ### Silhouette method
 
-The silhouette value measures how similar a point is to its own cluster \(cohesion\) compared to other clusters \(separation\).
+The silhouette value measures how similar a point is to its own cluster (cohesion) compared to other clusters (separation).
 
 A high value is desirable and indicates that the point is placed in the correct cluster. Pick the k value with highest silhouette value
-

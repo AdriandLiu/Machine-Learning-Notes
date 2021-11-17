@@ -39,27 +39,27 @@ Concave function
 
 ## Recognizing convex functions
 
-![](.gitbook/assets/106%20%281%29.png)
+![](.gitbook/assets/106.png)
 
 ## Gradient for linear and logistic
 
-## ![](.gitbook/assets/107%20%281%29.png)
+## ![](.gitbook/assets/107.png)
 
 Partial derivative w.r.t m
 
-![](.gitbook/assets/108%20%281%29.png)
+![](.gitbook/assets/108.png)
 
 ### Time complexity
 
-![](.gitbook/assets/109%20%281%29.png)
+![](.gitbook/assets/109.png)
 
 ### Codes
 
-![](.gitbook/assets/110%20%281%29.png)
+![](.gitbook/assets/110.png)
 
 ![](.gitbook/assets/111.png)
 
-Example: ![](.gitbook/assets/112%20%281%29.png)
+Example: ![](.gitbook/assets/112.png)
 
 ### Learning rate alpha
 
@@ -68,23 +68,23 @@ Learning rate has a signiﬁcant eﬀect on GD
 * **too small**: may take a long time to converge
 * **too large**: it overshoots
 
-![](.gitbook/assets/113%20%281%29.png)
+![](.gitbook/assets/113.png)
 
 ## Stochastic gradient descent
 
 ![](.gitbook/assets/114.png)
 
-Use average \(expected value\)
+Use average (expected value)
 
-| **Batch gradient update** | **Stochastic gradient update** |
-| :--- | :--- |
-| With small learning rate: **guaranteed** improved at each step | The **steps** are “on average” in the right direction |
-| ![](.gitbook/assets/115.png) | ![](.gitbook/assets/116%20%281%29.png) |
-| computes the gradient using the **whole dataset** | Stochastic gradient descent \(SGD\) computes the gradient using a **single sample**. Most applications of SGD actually use a **minibatch** of several samples |
-| Slower | Faster |
-| Directly towards an optimum solution, either local or global | SGD works well for error manifolds that have **lots of local maxima/minima**. In this case, the somewhat noisier gradient calculated using the reduced number of samples tends to jerk the model out of local minima into a region that hopefully is more optimal. |
-| ![](.gitbook/assets/117.png) | ![](.gitbook/assets/118.png) |
-| [https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent) |  |
+| **Batch gradient update**                                                                                                                                                                                              | **Stochastic gradient update**                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| With small learning rate: **guaranteed** improved at each step                                                                                                                                                         | The **steps** are “on average” in the right direction                                                                                                                                                                                                              |
+| ![](.gitbook/assets/115.png)                                                                                                                                                                                           | ![](.gitbook/assets/116.png)                                                                                                                                                                                                                                       |
+| computes the gradient using the **whole dataset**                                                                                                                                                                      | Stochastic gradient descent (SGD) computes the gradient using a **single sample**. Most applications of SGD actually use a **minibatch** of several samples                                                                                                        |
+| Slower                                                                                                                                                                                                                 | Faster                                                                                                                                                                                                                                                             |
+| Directly towards an optimum solution, either local or global                                                                                                                                                           | SGD works well for error manifolds that have **lots of local maxima/minima**. In this case, the somewhat noisier gradient calculated using the reduced number of samples tends to jerk the model out of local minima into a region that hopefully is more optimal. |
+| ![](.gitbook/assets/117.png)                                                                                                                                                                                           | ![](.gitbook/assets/118.png)                                                                                                                                                                                                                                       |
+| [https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent) |                                                                                                                                                                                                                                                                    |
 
 ### Convergence of SGD
 
@@ -113,7 +113,7 @@ Grdients will not reach 0 at optimum, how to guarantee convergence: **schedule**
 
 Average moving:
 
-![](.gitbook/assets/124%20%281%29.png)
+![](.gitbook/assets/124.png)
 
 ### Codes
 
@@ -121,30 +121,30 @@ Average moving:
 
 ![](.gitbook/assets/126.png)
 
-## Adagrad \(Adaptive gradient\)
+## Adagrad (Adaptive gradient)
 
 * use diﬀerent learning rate for each parameter
 * make the learning rate adaptive
 
 ![](.gitbook/assets/127.png)
 
-useful when parameters are updated at diﬀerent rates \(e.g., NLP\)
+useful when parameters are updated at diﬀerent rates (e.g., NLP)
 
 ![](.gitbook/assets/128.png)
 
 **problem: the learning rate goes to zero too quickly**
 
-## RMSprop \(Root Mean Squared Propagation\)
+## RMSprop (Root Mean Squared Propagation)
 
 ![](.gitbook/assets/129.png)
 
-## Adam \(Adaptive Moment Estimation\)
+## Adam (Adaptive Moment Estimation)
 
 two ideas so far:
 
-1. use momentum to smooth out the oscillations
+1\. use momentum to smooth out the oscillations
 
-2. adaptive per-parameter learning rate
+2\. adaptive per-parameter learning rate
 
 both use exponential moving averages
 
@@ -165,4 +165,3 @@ The authors propose default values of 0.9 for β1
 ![](.gitbook/assets/133.png)
 
 **Adding regularization can also help with optimization**
-

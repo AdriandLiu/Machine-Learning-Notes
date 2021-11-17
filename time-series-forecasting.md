@@ -14,7 +14,7 @@ Usually the result of long-term factors, such as changes in the population.
 
 ### Cyclical
 
-Any regular pattern of sequences of values above and below the treand line lasting more than on year\(cycle not ﬁxed\)
+Any regular pattern of sequences of values above and below the treand line lasting more than on year(cycle not ﬁxed)
 
 Usually due to multiyear cyclical movements in the economy
 
@@ -40,7 +40,7 @@ Above is an example of an autocorrelation plot. Looking closely, you realize tha
 
 **Seasonality** refers to periodic fluctuations. For example, electricity consumption is high during the day and low during night, or online sales increase during Christmas before slowing down again.
 
-![](.gitbook/assets/image%20%2883%29.png)
+![](<.gitbook/assets/image (92).png>)
 
 
 
@@ -50,7 +50,7 @@ Above is an example of an autocorrelation plot. Looking closely, you realize tha
 
 A time series is said to be stationary if its **statistical properties do not change over time**. In other words, **it has constant mean and variance, and covariance is independent of time.**
 
-![](.gitbook/assets/image%20%2889%29.png)
+![](<.gitbook/assets/image (93).png>)
 
 The mean and variance do not vary over time.
 
@@ -58,15 +58,15 @@ The mean and variance do not vary over time.
 
 Dickey-Fuller test: null hypothesis is the process is not stationary
 
-If it is, then _p &gt;_ 0, and the process is not stationary.
+If it is, then _p > _0, and the process is not stationary.
 
-Otherwise, _p =_ 0, the null hypothesis is rejected, and the process is considered to be stationary.
+Otherwise, _p = _0, the null hypothesis is rejected, and the process is considered to be stationary.
 
 ## Modeling Time Series
 
 Last value method: Suitable for a time series that is so unstable that even the next-to-last value is not considered relevant for forecasting the next value.
 
-Auto-regressive AR\(p\), where p is the number of earlier time steps to consider
+Auto-regressive AR(p), where p is the number of earlier time steps to consider
 
 Averaging method: Suitable for a very stable time series where even its ﬁrst few values are considered relevant for forecasting the next value.
 
@@ -76,13 +76,13 @@ Suitable for a moderately stable time series where the last few values are consi
 
 We can define a _window_ to apply the moving average model to _smooth_ the time series, and highlight different trends.
 
-Of course, the longer the window, the _smoother_ the trend will be. Below is an example of moving average on a smaller window.
+Of course, the longer the window, the _smoother _the trend will be. Below is an example of moving average on a smaller window.
 
-![](.gitbook/assets/image%20%2890%29.png) ![](.gitbook/assets/image%20%2882%29.png)
+![](<.gitbook/assets/image (94).png>) ![](<.gitbook/assets/image (95).png>)
 
- 
+&#x20;
 
-Moving average MA\(q\), where q is the window
+Moving average MA(q), where q is the window
 
 ### Exponential smoothing method
 
@@ -90,9 +90,9 @@ Suitable for a time series in the range from somewhat unstable to rather stable,
 
 similar to moving average but with a decreasing weight
 
-![](.gitbook/assets/103%20%281%29.png) , where is the smoothing factor![](.gitbook/assets/104%20%281%29.png)![](.gitbook/assets/105%20%281%29.png)
+![](<.gitbook/assets/103 (1).png>) , where is the smoothing factor![](<.gitbook/assets/104 (1).png>)![](<.gitbook/assets/105 (1).png>)
 
-![](.gitbook/assets/image%20%2896%29.png)
+![](<.gitbook/assets/image (96).png>)
 
 
 
@@ -100,11 +100,11 @@ similar to moving average but with a decreasing weight
 
 used when there is a trend in the time series
 
-![](.gitbook/assets/106.png)![](.gitbook/assets/107.png)![](.gitbook/assets/108.png), where ![](.gitbook/assets/109.png) is the trend smoothing![](.gitbook/assets/110.png)![](.gitbook/assets/111%20%281%29.png)![](.gitbook/assets/112.png)![](.gitbook/assets/113.png)![](.gitbook/assets/114%20%281%29.png)![](.gitbook/assets/115%20%281%29.png)![](.gitbook/assets/116.png)
+![](<.gitbook/assets/106 (1).png>)![](<.gitbook/assets/107 (1).png>)![](<.gitbook/assets/108 (1).png>), where ![](<.gitbook/assets/109 (1).png>) is the trend smoothing![](<.gitbook/assets/110 (1).png>)![](<.gitbook/assets/111 (1).png>)![](<.gitbook/assets/112 (1).png>)![](<.gitbook/assets/113 (1).png>)![](<.gitbook/assets/114 (1).png>)![](<.gitbook/assets/115 (1).png>)![](<.gitbook/assets/116 (1).png>)
 
 factor
 
-![](.gitbook/assets/image%20%2897%29.png)
+![](<.gitbook/assets/image (97).png>)
 
 ### Tripe exponential smoothing
 
@@ -120,9 +120,9 @@ Applied when data shows evidence of non-stationarity
 
 SARIMA = Seasonal Auto-Regressive Integrated Moving Average
 
-Auto-Regressive AR\(p\): Variable of interest is regressed on its own lagged \(prior\) values
+Auto-Regressive AR(p): Variable of interest is regressed on its own lagged (prior) values
 
-Moving Average MA\(q\): Regression error is linear combination of past and present errors Integrated I\(d\): Original data has been replaced by diﬀerence between current and previous terms Seasonality S\(P, D, Q, s\): s represent the season length
+Moving Average MA(q): Regression error is linear combination of past and present errors Integrated I(d): Original data has been replaced by diﬀerence between current and previous terms Seasonality S(P, D, Q, s): s represent the season length
 
 SARIMA parametrized by p, q, and d
 
@@ -138,7 +138,7 @@ represents the biggest lag after which other lags are not signiﬁcant on the au
 
 ![](.gitbook/assets/118.jpeg)q would be 4
 
-d: degree of diﬀerence \(number of times past values subtracted\)
+d: degree of diﬀerence (number of times past values subtracted)
 
 represents the number of diﬀerences required to make the series stationary. s: the season’s length
 
@@ -154,7 +154,7 @@ Forecast error
 
 Scale-dependent error: MAE & RMSE
 
-percentage error: MAPE \(mean average percentage error\) scaled error: MASE \(mean absolute average error\)
+percentage error: MAPE (mean average percentage error) scaled error: MASE (mean absolute average error)
 
 Cross validation
 
@@ -163,4 +163,3 @@ Cross validation
 [Reference: CMU 95851 Data Science for Product Manager Fall 2019 lecture; https://towardsdatascience.com/almost-](https://towardsdatascience.com/almost-everything-you-need-to-know-about-time-series-860241bdc578) [everything-you-need-to-know-about-time-series-860241bdc578; https://towardsdatascience.com/how-well-my-ti me-series-models-performed-actual-vs-prediction-r-1281fc66238e;](https://towardsdatascience.com/how-well-my-time-series-models-performed-actual-vs-prediction-r-1281fc66238e) [https://otexts.com/fpp2/accuracy.html](https://otexts.com/fpp2/accuracy.html)
 
 [End-to-end sample: https://towardsdatascience.com/end-to-end-time-series-analysis-and-modelling-8c34f09a301 4](https://towardsdatascience.com/end-to-end-time-series-analysis-and-modelling-8c34f09a3014)
-

@@ -8,395 +8,395 @@ ML Midterm Review
 
 Contents
 
-[Overview 4]()
+[Overview 4](broken-reference)
 
-[Logistics 5]()
+[Logistics 5](broken-reference)
 
-[ML Basics 5]()
+[ML Basics 5](broken-reference)
 
-[Measures 5]()
+[Measures 5](broken-reference)
 
-[Terminology 5]()
+[Terminology 5](broken-reference)
 
-[Nearest Neighbor Classifier 5]()
+[Nearest Neighbor Classifier 5](broken-reference)
 
-[K - nearest neighbors 5]()
+[K - nearest neighbors 5](broken-reference)
 
-[Curse of Dimensionality 6]()
+[Curse of Dimensionality 6](broken-reference)
 
-[Manifold Hypothesis 6]()
+[Manifold Hypothesis 6](broken-reference)
 
-[Model Selection 6]()
+[Model Selection 6](broken-reference)
 
-[Generalization 6]()
+[Generalization 6](broken-reference)
 
-[Hyperparameter Tuning 6]()
+[Hyperparameter Tuning 6](broken-reference)
 
-[K-folder cross validation CV 6]()
+[K-folder cross validation CV 6](broken-reference)
 
-[Leave-one-out CV 6]()
+[Leave-one-out CV 6](broken-reference)
 
-[Inductive \(归纳的\) Bias 6]()
+[Inductive (归纳的) Bias 6](broken-reference)
 
-[Linear 7]()
+[Linear 7](broken-reference)
 
-[Representing Data 7]()
+[Representing Data 7](broken-reference)
 
-[Linear Model 7]()
+[Linear Model 7](broken-reference)
 
-[Loss Function 7]()
+[Loss Function 7](broken-reference)
 
-[Logistics 8]()
+[Logistics 8](broken-reference)
 
-[Solution 8]()
+[Solution 8](broken-reference)
 
-[Logistic Regression Model: 8]()
+[Logistic Regression Model: 8](broken-reference)
 
-[Loss functions for linear classifier 8]()
+[Loss functions for linear classifier 8](broken-reference)
 
-[Find the optimal weights 8]()
+[Find the optimal weights 8](broken-reference)
 
-[Gradient 8]()
+[Gradient 8](broken-reference)
 
-[Likelihood 9]()
+[Likelihood 9](broken-reference)
 
-[Maximum likelihood & logistic regression 9]()
+[Maximum likelihood & logistic regression 9](broken-reference)
 
-[Maximum likelihood & linear regression 9]()
+[Maximum likelihood & linear regression 9](broken-reference)
 
-[Multiclass classification 9]()
+[Multiclass classification 9](broken-reference)
 
-[Softmax likelihood & one-hot encoding 9]()
+[Softmax likelihood & one-hot encoding 9](broken-reference)
 
-[Optimization 9]()
+[Optimization 9](broken-reference)
 
-[Gradient descent! 9]()
+[Gradient descent! 9](broken-reference)
 
-[Naïve Bayes 10]()
+[Naïve Bayes 10](broken-reference)
 
-[Naïve bayes model 10]()
+[Naïve bayes model 10](broken-reference)
 
-[Max joint likelihood 10]()
+[Max joint likelihood 10](broken-reference)
 
-[Naïve bayes formula details: 10]()
+[Naïve bayes formula details: 10](broken-reference)
 
-[Class prior 10]()
+[Class prior 10](broken-reference)
 
-[Likelihood 11]()
+[Likelihood 11](broken-reference)
 
-[![](.gitbook/assets/0.png) 11]()
+[![](.gitbook/assets/0.png) 11](broken-reference)
 
-[Binary features: Bernoulli NB 11]()
+[Binary features: Bernoulli NB 11](broken-reference)
 
-[Multinomial features: 11]()
+[Multinomial features: 11](broken-reference)
 
-[Gaussian features: 11]()
+[Gaussian features: 11](broken-reference)
 
-[Decision Boundary 11]()
+[Decision Boundary 11](broken-reference)
 
-[Discriminative vs Generative Classification 11]()
+[Discriminative vs Generative Classification 11](broken-reference)
 
-[Regularization 11]()
+[Regularization 11](broken-reference)
 
-[Ridge regression 11]()
+[Ridge regression 11](broken-reference)
 
-[Ridge weight formula 12]()
+[Ridge weight formula 12](broken-reference)
 
-[Ridge with data normalization 12]()
+[Ridge with data normalization 12](broken-reference)
 
-[Maximum a Posteriori \(MAP\) 12]()
+[Maximum a Posteriori (MAP) 12](broken-reference)
 
-[Gaussian prior 12]()
+[Gaussian prior 12](broken-reference)
 
-[Laplace prior 12]()
+[Laplace prior 12](broken-reference)
 
-[Lasso 12]()
+[Lasso 12](broken-reference)
 
-[L1 vs L2 regularization 12]()
+[L1 vs L2 regularization 12](broken-reference)
 
-[Diff regularization subset selection 13]()
+[Diff regularization subset selection 13](broken-reference)
 
-[L1 VS L0 13]()
+[L1 VS L0 13](broken-reference)
 
-[Bias-variance decomposition 13]()
+[Bias-variance decomposition 13](broken-reference)
 
-[Cross validation 13]()
+[Cross validation 13](broken-reference)
 
-[Evaluation 14]()
+[Evaluation 14](broken-reference)
 
-[Gradient Descent 14]()
+[Gradient Descent 14](broken-reference)
 
-[Optimization in ML 14]()
+[Optimization in ML 14](broken-reference)
 
-[Gradient 14]()
+[Gradient 14](broken-reference)
 
-[Gradient descent 14]()
+[Gradient descent 14](broken-reference)
 
-[Convex function 14]()
+[Convex function 14](broken-reference)
 
-[Definition 14]()
+[Definition 14](broken-reference)
 
-[Why convex? 14]()
+[Why convex? 14](broken-reference)
 
-[Recognizing convex functions 15]()
+[Recognizing convex functions 15](broken-reference)
 
-[Gradient for linear and logistic 15]()
+[Gradient for linear and logistic 15](broken-reference)
 
-[![](.gitbook/assets/1.png) 15]()
+[![](.gitbook/assets/1.png) 15](broken-reference)
 
-[Time complexity 15]()
+[Time complexity 15](broken-reference)
 
-[Codes 15]()
+[Codes 15](broken-reference)
 
-[Learning rate alpha 15]()
+[Learning rate alpha 15](broken-reference)
 
-[Stochastic gradient descent 15]()
+[Stochastic gradient descent 15](broken-reference)
 
-[Convergence of SGD 16]()
+[Convergence of SGD 16](broken-reference)
 
-[Minibatch SGD 16]()
+[Minibatch SGD 16](broken-reference)
 
-[Codes 16]()
+[Codes 16](broken-reference)
 
-[Momentum 16]()
+[Momentum 16](broken-reference)
 
-[Codes 17]()
+[Codes 17](broken-reference)
 
-[Adagrad \(Adaptive gradient\) 17]()
+[Adagrad (Adaptive gradient) 17](broken-reference)
 
-[RMSprop \(Root Mean Squared Propagation\) 17]()
+[RMSprop (Root Mean Squared Propagation) 17](broken-reference)
 
-[Adam \(Adaptive Moment Estimation\) 17]()
+[Adam (Adaptive Moment Estimation) 17](broken-reference)
 
-[Adding L2 Regularization 17]()
+[Adding L2 Regularization 17](broken-reference)
 
-[Adding L1 Regularization 18]()
+[Adding L1 Regularization 18](broken-reference)
 
-[Evaluation 18]()
+[Evaluation 18](broken-reference)
 
-[Evaluation and comparison 18]()
+[Evaluation and comparison 18](broken-reference)
 
-[Performance metrics for classification 18]()
+[Performance metrics for classification 18](broken-reference)
 
-[Example precision recall 18]()
+[Example precision recall 18](broken-reference)
 
-[Less common metrics: 19]()
+[Less common metrics: 19](broken-reference)
 
-[Performance metrics for multi-class classiﬁcation 19]()
+[Performance metrics for multi-class classiﬁcation 19](broken-reference)
 
-[Trade-oﬀ between precision and recall ROC&AUC 19]()
+[Trade-oﬀ between precision and recall ROC\&AUC 19](broken-reference)
 
-[Cross validation in Evaluation 19]()
+[Cross validation in Evaluation 19](broken-reference)
 
-[Over-ﬁtting in Model Selection 19]()
+[Over-ﬁtting in Model Selection 19](broken-reference)
 
-[Nested CV 19]()
+[Nested CV 19](broken-reference)
 
-[Perceptron and Support Vector Machines 20]()
+[Perceptron and Support Vector Machines 20](broken-reference)
 
-[Perceptron 20]()
+[Perceptron 20](broken-reference)
 
-[Objective 20]()
+[Objective 20](broken-reference)
 
-[Optimization 20]()
+[Optimization 20](broken-reference)
 
-[Codes 20]()
+[Codes 20](broken-reference)
 
-[Issues 20]()
+[Issues 20](broken-reference)
 
-[Margin 20]()
+[Margin 20](broken-reference)
 
-[Max margin classifier 21]()
+[Max margin classifier 21](broken-reference)
 
-[Hard margin SVM objective 21]()
+[Hard margin SVM objective 21](broken-reference)
 
-[Soft margin SVM constraints 21]()
+[Soft margin SVM constraints 21](broken-reference)
 
-[Hinge loss 21]()
+[Hinge loss 21](broken-reference)
 
-[Perceptron vs SVM 21]()
+[Perceptron vs SVM 21](broken-reference)
 
-[![](.gitbook/assets/2.png) 22]()
+[![](.gitbook/assets/2.png) 22](broken-reference)
 
-[SVM codes 22]()
+[SVM codes 22](broken-reference)
 
-[SVM recap 22]()
+[SVM recap 22](broken-reference)
 
-[SVM vs. logistic regression 22]()
+[SVM vs. logistic regression 22](broken-reference)
 
-[Decision Trees 23]()
+[Decision Trees 23](broken-reference)
 
-[Pros and cons 23]()
+[Pros and cons 23](broken-reference)
 
-[DT idea 23]()
+[DT idea 23](broken-reference)
 
-[Prediction per region 23]()
+[Prediction per region 23](broken-reference)
 
-[For regression: 23]()
+[For regression: 23](broken-reference)
 
-[For classification: 23]()
+[For classification: 23](broken-reference)
 
-[Feature types 23]()
+[Feature types 23](broken-reference)
 
-[Continuous: 23]()
+[Continuous: 23](broken-reference)
 
-[Ordinal: 23]()
+[Ordinal: 23](broken-reference)
 
-[Categorical: 24]()
+[Categorical: 24](broken-reference)
 
-[Cost Function 24]()
+[Cost Function 24](broken-reference)
 
-[Regression cost 24]()
+[Regression cost 24](broken-reference)
 
-[Classification cost 24]()
+[Classification cost 24](broken-reference)
 
-[Search space 24]()
+[Search space 24](broken-reference)
 
-[Greedy heuristic 24]()
+[Greedy heuristic 24](broken-reference)
 
-[Stopping the recursion 24]()
+[Stopping the recursion 24](broken-reference)
 
-[Entropy loss 25]()
+[Entropy loss 25](broken-reference)
 
-[Why? 25]()
+[Why? 25](broken-reference)
 
-[Mutual information 25]()
+[Mutual information 25](broken-reference)
 
-[Entropy for classiﬁcation cost 25]()
+[Entropy for classiﬁcation cost 25](broken-reference)
 
-[Gini index – the way to split the tree 26]()
+[Gini index – the way to split the tree 26](broken-reference)
 
-[Overfitting 26]()
+[Overfitting 26](broken-reference)
 
-[Pruning 26]()
+[Pruning 26](broken-reference)
 
-[Bootstrap, bagging, and boosting 26]()
+[Bootstrap, bagging, and boosting 26](broken-reference)
 
-[Bootstrap 26]()
+[Bootstrap 26](broken-reference)
 
-[Codes 26]()
+[Codes 26](broken-reference)
 
-[Bagging \(Bootstrap aggregating\) 27]()
+[Bagging (Bootstrap aggregating) 27](broken-reference)
 
-[Bagging for regression 27]()
+[Bagging for regression 27](broken-reference)
 
-[Bagging for classiﬁcation 27]()
+[Bagging for classiﬁcation 27](broken-reference)
 
-[Example 27]()
+[Example 27](broken-reference)
 
-[Random forests 27]()
+[Random forests 27](broken-reference)
 
-[Out of bag \(OOB\) samples 27]()
+[Out of bag (OOB) samples 27](broken-reference)
 
-[Summary 28]()
+[Summary 28](broken-reference)
 
-[Adaptive bases 28]()
+[Adaptive bases 28](broken-reference)
 
-[Optimization idea 28]()
+[Optimization idea 28](broken-reference)
 
-[Example 28]()
+[Example 28](broken-reference)
 
-[Exponential loss 29]()
+[Exponential loss 29](broken-reference)
 
-[AdaBoost algorithm 29]()
+[AdaBoost algorithm 29](broken-reference)
 
-[Discrete AdaBoost Algorithm Example 30]()
+[Discrete AdaBoost Algorithm Example 30](broken-reference)
 
-[Example 30]()
+[Example 30](broken-reference)
 
-[Gradient boosting 30]()
+[Gradient boosting 30](broken-reference)
 
-[Algorithm 30]()
+[Algorithm 30](broken-reference)
 
-[Gradient tree boosting 31]()
+[Gradient tree boosting 31](broken-reference)
 
-[Some loss functions for gradient boosting 31]()
+[Some loss functions for gradient boosting 31](broken-reference)
 
-[!!!Boosting vs Bagging 31]()
+[!!!Boosting vs Bagging 31](broken-reference)
 
-[Multilayer perceptron 33]()
+[Multilayer perceptron 33](broken-reference)
 
-[Adaptive Radial Base 33]()
+[Adaptive Radial Base 33](broken-reference)
 
-[Sigmoid Bases 34]()
+[Sigmoid Bases 34](broken-reference)
 
-[Adaptive sigmoid bases 34]()
+[Adaptive sigmoid bases 34](broken-reference)
 
-[Multilayer perceptron MLP 34]()
+[Multilayer perceptron MLP 34](broken-reference)
 
-[Regression 34]()
+[Regression 34](broken-reference)
 
-[Classification 35]()
+[Classification 35](broken-reference)
 
-[!!! Activation function 35]()
+[!!! Activation function 35](broken-reference)
 
-[Logistic function 35]()
+[Logistic function 35](broken-reference)
 
-[Hyperbolic tangent 35]()
+[Hyperbolic tangent 35](broken-reference)
 
-[ReLU 35]()
+[ReLU 35](broken-reference)
 
-[Leaky ReLU 35]()
+[Leaky ReLU 35](broken-reference)
 
-[Softplus 35]()
+[Softplus 35](broken-reference)
 
-[Network architecture 35]()
+[Network architecture 35](broken-reference)
 
-[Depth vs Width 35]()
+[Depth vs Width 35](broken-reference)
 
-[Multilayer perceptron 36]()
+[Multilayer perceptron 36](broken-reference)
 
-[Regularization strategies 37]()
+[Regularization strategies 37](broken-reference)
 
-[Overfit: variance reduction 37]()
+[Overfit: variance reduction 37](broken-reference)
 
-[Noise robustness 37]()
+[Noise robustness 37](broken-reference)
 
-[Early stopping 37]()
+[Early stopping 37](broken-reference)
 
-[Bagging 37]()
+[Bagging 37](broken-reference)
 
-[Dropout 38]()
+[Dropout 38](broken-reference)
 
-[Summary 38]()
+[Summary 38](broken-reference)
 
-[Gradient Computation & Automatic Differentiation 38]()
+[Gradient Computation & Automatic Differentiation 38](broken-reference)
 
-[Landscape of the cost function 39]()
+[Landscape of the cost function 39](broken-reference)
 
-[Jacobian matrix 39]()
+[Jacobian matrix 39](broken-reference)
 
-[Chain rule 39]()
+[Chain rule 39](broken-reference)
 
-[Training a two layer MLP 39]()
+[Training a two layer MLP 39](broken-reference)
 
-[Gradient calculation 39]()
+[Gradient calculation 39](broken-reference)
 
-[For regression 39]()
+[For regression 39](broken-reference)
 
-[For binary classification 39]()
+[For binary classification 39](broken-reference)
 
-[For multiclass classification 40]()
+[For multiclass classification 40](broken-reference)
 
-[Example: 40]()
+[Example: 40](broken-reference)
 
-[Automating gradient computation 41]()
+[Automating gradient computation 41](broken-reference)
 
-[Automatic differentiation 41]()
+[Automatic differentiation 41](broken-reference)
 
-[Forward mode 41]()
+[Forward mode 41](broken-reference)
 
-[Computational graph 41]()
+[Computational graph 41](broken-reference)
 
-[Reverse mode 41]()
+[Reverse mode 41](broken-reference)
 
-[Computational graph 42]()
+[Computational graph 42](broken-reference)
 
-[Forward vs Reverse mode 42]()
+[Forward vs Reverse mode 42](broken-reference)
 
-[Summary 42]()
+[Summary 42](broken-reference)
 
-[Backpropagation explain and resources 42]()
+[Backpropagation explain and resources 42](broken-reference)
 
 Overview
 
@@ -404,9 +404,9 @@ Types:
 
 Supervised learning: labeled data:
 
-**Classification** \(categorical output, discrete\):
+**Classification** (categorical output, discrete):
 
-**Regression** \(numerical output, continuous\),
+**Regression** (numerical output, continuous),
 
 **Structured prediction**
 
@@ -428,17 +428,17 @@ ML Basics
 
 ## Measures
 
-![](.gitbook/assets/3%20%281%29.png) Binary Classification
+![](.gitbook/assets/3.png) Binary Classification
 
 ## Terminology
 
-![](.gitbook/assets/4%20%281%29.png)
+![](.gitbook/assets/4.png)
 
 ![](.gitbook/assets/5.png)
 
-![](.gitbook/assets/6%20%281%29.png)
+![](.gitbook/assets/6.png)
 
-![](.gitbook/assets/7%20%281%29.png)
+![](.gitbook/assets/7.png)
 
 ## Nearest Neighbor Classifier
 
@@ -446,19 +446,19 @@ ML Basics
 
 **test**: predict the lable by ﬁnding the closest image in the training set and need a measure of _**distance**_
 
-![](.gitbook/assets/8%20%281%29.png)
+![](.gitbook/assets/8.png)
 
 ## K - nearest neighbors
 
-**training**: do nothing \(lazy learning\)
+**training**: do nothing (lazy learning)
 
 **test**: predict the lable by ﬁnding the K closest instances
 
-![](.gitbook/assets/9%20%281%29.png)
+![](.gitbook/assets/9.png)
 
-![](.gitbook/assets/10%20%281%29.png)
+![](.gitbook/assets/10.png)
 
-a non-parametric method: the number of model parameters **grows** with the data this is in contrast with a **parametric model** which has a **ﬁxed** number of parameters, is faster to use but has stronger assumptions on the nature of the data distribution 
+a non-parametric method: the number of model parameters **grows** with the data this is in contrast with a **parametric model** which has a **ﬁxed** number of parameters, is faster to use but has stronger assumptions on the nature of the data distribution&#x20;
 
 **KNN works well if input has low dimensions**
 
@@ -466,15 +466,15 @@ a non-parametric method: the number of model parameters **grows** with the data 
 
 High dim are unintuitive
 
-* need exponentially more instances for K-NN to work \(more data\)
+* need exponentially more instances for K-NN to work (more data)
 * with same number of instances, the space becomes very sparse
 * **all samples have similar distances**
 
 ## Manifold Hypothesis
 
-In the real-world, high-dim data lie close to the surface of a manifold \(多支管\)/low-dim
+In the real-world, high-dim data lie close to the surface of a manifold (多支管)/low-dim
 
-![](.gitbook/assets/11%20%281%29.png)
+![](.gitbook/assets/11.png)
 
 ## Model Selection
 
@@ -488,11 +488,11 @@ Generalization: performance of algorithm on unseen data
 
 ## Hyperparameter Tuning
 
-Training \(used to train the model\),
+Training (used to train the model),
 
-Testing \(used to evaluate the final model\),
+Testing (used to evaluate the final model),
 
-Validation dataset \(used to tune the hyperparameter\).
+Validation dataset (used to tune the hyperparameter).
 
 _Performance on validation set ≈ generalizationError_
 
@@ -506,7 +506,7 @@ _Performance on validation set ≈ generalizationError_
 
 Extreme case of k = N
 
-## Inductive \(归纳的\) Bias
+## Inductive (归纳的) Bias
 
 ML algorithms need to make assumptions about the problem
 
@@ -514,7 +514,7 @@ inductive bias: strength and correctness of assumptions are important in having 
 
 Examples:
 
-* manifold hypothesis in KNN \(and many other methods\)
+* manifold hypothesis in KNN (and many other methods)
 * close to linear dependencies in linear regression
 * conditional independence and causal structure in probabilistic graphical models
 
@@ -522,17 +522,17 @@ Linear
 
 ## Representing Data
 
-![](.gitbook/assets/14%20%281%29.png)
+![](.gitbook/assets/14.png)
 
-![](.gitbook/assets/15%20%281%29.png)
+![](.gitbook/assets/15.png)
 
 we assume N instances in the dataset each instance has D features indexed by d
 
 ## Linear Model
 
-![](.gitbook/assets/16%20%281%29.png)
+![](.gitbook/assets/16.png)
 
-![](.gitbook/assets/17%20%281%29.png)
+![](.gitbook/assets/17.png)
 
 ## Loss Function
 
@@ -542,9 +542,9 @@ Objective: find parameters to fit the data
 
 Residual: ![](.gitbook/assets/19.png)
 
-Linear least square \(L2 loss\) cost function:
+Linear least square (L2 loss) cost function:
 
-![](.gitbook/assets/20%20%281%29.png)
+![](.gitbook/assets/20.png)
 
 **L1 vs L2 Loss Function**
 
@@ -556,19 +556,19 @@ L1 Loss function stands for **Least Absolute Deviations**. Also known as LAD.
 
 L2 Loss function stands for **Least Square Errors**. Also known as LS.
 
-![](.gitbook/assets/22%20%281%29.png)
+![](.gitbook/assets/22.png)
 
 **AIMS TO MIN LOSS FUNTION:**
 
-![](.gitbook/assets/23%20%281%29.png)
+![](.gitbook/assets/23.png)
 
 Derivative:
 
-![](.gitbook/assets/24%20%281%29.png) ![](.gitbook/assets/25.png)
+![](.gitbook/assets/24.png) ![](.gitbook/assets/25.png)
 
 Direct Solution:
 
-![](.gitbook/assets/26%20%281%29.png)
+![](.gitbook/assets/26.png)
 
 ![](.gitbook/assets/27.png)
 
@@ -576,7 +576,7 @@ Linear for **large dataset:**
 
 Stochastic gradient descent
 
-what if X^T X is **not invertible**? \(columns of X are not linearly independent, either redundant features or numFeature &gt; numInstance; D&gt; N\)
+what if X^T X is **not invertible**? (columns of X are not linearly independent, either redundant features or numFeature > numInstance; D> N)
 
 ![](.gitbook/assets/28.png)
 
@@ -584,13 +584,13 @@ Logistics
 
 **Logistics is a linear classifier**
 
-more than one class:  y ∈ {0,1,…,C} \(**multi-class**: logistics fit C number of classifier and make prediction based on the most confident result\), fit a linear model to each class, turn y into one-hot encoding: ![](.gitbook/assets/29%20%281%29.png)
+more than one class:  y ∈ {0,1,…,C} (**multi-class**: logistics fit C number of classifier and make prediction based on the most confident result), fit a linear model to each class, turn y into one-hot encoding: ![](.gitbook/assets/29.png)
 
 Linear regression is sensitive to the **outliers**
 
 L2 loss **problem**: correct prediction can have higher loss than the incorrect one! ![](.gitbook/assets/30.png)
 
-Solution: Squash the loss function: ![](.gitbook/assets/31%20%281%29.png)
+Solution: Squash the loss function: ![](.gitbook/assets/31.png)
 
 Logistics:
 
@@ -598,11 +598,11 @@ Logistics:
 
 Decision boundary:
 
-![](.gitbook/assets/33%20%281%29.png)
+![](.gitbook/assets/33.png)
 
 ## Logistic Regression Model:
 
-![](.gitbook/assets/34%20%281%29.png)
+![](.gitbook/assets/34.png)
 
 ## Loss functions for linear classifier
 
@@ -610,7 +610,7 @@ Decision boundary:
 
 Simplifying the cost function
 
-![](.gitbook/assets/36%20%281%29.png)
+![](.gitbook/assets/36.png)
 
 ## Find the optimal weights
 
@@ -618,7 +618,7 @@ Simplifying the cost function
 
 ![](.gitbook/assets/37.png)
 
-Logit function: ![](.gitbook/assets/38%20%281%29.png)
+Logit function: ![](.gitbook/assets/38.png)
 
 ## Likelihood
 
@@ -630,9 +630,9 @@ Logit function: ![](.gitbook/assets/38%20%281%29.png)
 
 Cross Entropy loss deviated from log-likelihood of Bernoulli PDF
 
-Minimizing logistic loss corresponds to maximizing **Bernoulli** likelihood. Minimizing squared-error loss corresponds to maximizing **Gaussian** likelihood \(it's just OLS regression; for 2-class classification it's actually equivalent to LDA\).
+Minimizing logistic loss corresponds to maximizing **Bernoulli** likelihood. Minimizing squared-error loss corresponds to maximizing **Gaussian** likelihood (it's just OLS regression; for 2-class classification it's actually equivalent to LDA).
 
-Log likelihood: why? Likelihood value blows up for large N, work with log-likelihood instead \(same maximum\) cross entropy
+Log likelihood: why? Likelihood value blows up for large N, work with log-likelihood instead (same maximum) cross entropy
 
 ![](.gitbook/assets/41.png)
 
@@ -646,17 +646,17 @@ Squared error loss:
 
 **Binary** classification: **Bernoulli** likelihood
 
-![](.gitbook/assets/43%20%281%29.png)
+![](.gitbook/assets/43.png)
 
 C classes: categorical likelihood
 
 **Softmax**
 
-Softmax做事情就是对**最大值**进行强化 \(for the reason why exp\(z\_i\)\)
+Softmax做事情就是对**最大值**进行强化 (for the reason why exp(z\_i))
 
 ![](.gitbook/assets/44.png) ![](.gitbook/assets/45.png)
 
-![](.gitbook/assets/46%20%281%29.png)
+![](.gitbook/assets/46.png)
 
 if input values are large, **softmax** becomes similar to **argmax**
 
@@ -666,7 +666,7 @@ if input values are large, **softmax** becomes similar to **argmax**
 
 **Why one-hot encoding**: The integer values have a natural ordered relationship between each other and machine learning algorithms may be able to understand and harness this relationship
 
-![](.gitbook/assets/48%20%281%29.png)
+![](.gitbook/assets/48.png)
 
 we can also use this encoding for **categorical inputs features**  one-hot encoding for input features
 
@@ -690,15 +690,15 @@ remove one of the one-hot encoding features
 
 Naïve Bayes
 
-**Discriminative**: conditional distribution p\(y\|x\) eg: linear and logistics
+**Discriminative**: conditional distribution p(y|x) eg: linear and logistics
 
-**Generative**: joint distribution p\(x,y\) = p\(y\)p\(x\|y\) eg:
+**Generative**: joint distribution p(x,y) = p(y)p(x|y) eg:
 
- Naïve bayes ![](.gitbook/assets/53.png)
+&#x20;Naïve bayes ![](.gitbook/assets/53.png)
 
 Example:
 
-![](.gitbook/assets/54%20%281%29.png)
+![](.gitbook/assets/54.png)
 
 **in a generative classiﬁer likelihood & prior class probabilities are learned from data**
 
@@ -709,13 +709,13 @@ Some generative classiﬁers:
 
 ## Naïve bayes model
 
-NB **assumption**: ![](.gitbook/assets/55%20%281%29.png)
+NB **assumption**: ![](.gitbook/assets/55.png)
 
 when features are **conditionally independent** given the label
 
 ## Max joint likelihood
 
-Joint distribution: p\(x,y\) = p\(y\)p\(x\|y\)
+Joint distribution: p(x,y) = p(y)p(x|y)
 
 ![](.gitbook/assets/56.png)
 
@@ -723,7 +723,7 @@ During training of NB:
 
 ![](.gitbook/assets/57.png)
 
-During testing of NB: ![](.gitbook/assets/58%20%281%29.png)
+During testing of NB: ![](.gitbook/assets/58.png)
 
 ![](.gitbook/assets/59.png)
 
@@ -737,13 +737,13 @@ During testing of NB: ![](.gitbook/assets/58%20%281%29.png)
 
 **Binary classification:**
 
-Bernoulli distribution: ![](.gitbook/assets/61%20%281%29.png)
+Bernoulli distribution: ![](.gitbook/assets/61.png)
 
-Max log-likelihood & get the max point: ![](.gitbook/assets/62%20%281%29.png)
+Max log-likelihood & get the max point: ![](.gitbook/assets/62.png)
 
 **Multiclass classification:**
 
-Categorical distribution: ![](.gitbook/assets/63%20%281%29.png)
+Categorical distribution: ![](.gitbook/assets/63.png)
 
 Optimal parameters: ![](.gitbook/assets/64.png)
 
@@ -751,7 +751,7 @@ Optimal parameters: ![](.gitbook/assets/64.png)
 
 **Choice of likelihood distribution depends on the type of features**
 
-## ![](.gitbook/assets/65%20%281%29.png)
+## ![](.gitbook/assets/65.png)
 
 * Bernoulli: binary features
 * Categorical: categorical features
@@ -759,7 +759,7 @@ Optimal parameters: ![](.gitbook/assets/64.png)
 
 **each feature may use a diﬀerent likelihood**
 
-**and separate max-likelihood estimate for each feature** ![](.gitbook/assets/66%20%281%29.png)
+**and separate max-likelihood estimate for each feature** ![](.gitbook/assets/66.png)
 
 ## Binary features: Bernoulli NB
 
@@ -777,19 +777,19 @@ MLE estimates: ![](.gitbook/assets/70.png)
 
 ## Gaussian features:
 
-![](.gitbook/assets/71%20%281%29.png)
+![](.gitbook/assets/71.png)
 
 MLE![](.gitbook/assets/72.png)
 
 ## Decision Boundary
 
-two classes have the same probability: ![](.gitbook/assets/73%20%281%29.png)
+two classes have the same probability: ![](.gitbook/assets/73.png)
 
-![](.gitbook/assets/74%20%281%29.png)
+![](.gitbook/assets/74.png)
 
 ### Discriminative vs Generative Classification
 
-![](.gitbook/assets/75%20%281%29.png)
+![](.gitbook/assets/75.png)
 
 Regularization
 
@@ -807,14 +807,14 @@ Idea: penalize large parameter values
 
 Side note L2 norm:
 
-![](.gitbook/assets/77%20%281%29.png)
+![](.gitbook/assets/77.png)
 
-* regularization parameter  λ &gt; 0 controls the strength of regularization
+* regularization parameter  λ > 0 controls the strength of regularization
 * a good practice is to not penalize the intercept
 
 ## Ridge weight formula
 
-![](.gitbook/assets/78%20%281%29.png)
+![](.gitbook/assets/78.png)
 
 ## Ridge with data normalization
 
@@ -822,7 +822,7 @@ Side note L2 norm:
 
 ![](.gitbook/assets/80.png)
 
-**With regularization**: ![](.gitbook/assets/81%20%281%29.png)
+**With regularization**: ![](.gitbook/assets/81.png)
 
 Diff features will be penalized differently
 
@@ -832,23 +832,23 @@ Diff features will be penalized differently
 
 ![](.gitbook/assets/83.png)
 
-## Maximum a Posteriori \(MAP\)
+## Maximum a Posteriori (MAP)
 
-![](.gitbook/assets/84%20%281%29.png)
+![](.gitbook/assets/84.png)
 
 ## Gaussian prior
 
-![](.gitbook/assets/85%20%281%29.png)
+![](.gitbook/assets/85.png)
 
 ## Laplace prior
 
-Lasso ![](.gitbook/assets/86%20%281%29.png)
+Lasso ![](.gitbook/assets/86.png)
 
 ## L1 vs L2 regularization
 
 ![](.gitbook/assets/87.png)
 
-![](.gitbook/assets/88%20%281%29.png)
+![](.gitbook/assets/88.png)
 
 ## Diff regularization subset selection
 
@@ -862,9 +862,9 @@ optimizing this is a diﬃcult combinatorial problem:
 
 It’s just like LASSO but has a little difference. LASSO has a limit:
 
-the L1 norm of the parameters &lt; t \(some constant threshold\)
+the L1 norm of the parameters < t (some constant threshold)
 
-For L0 regularization. The constraint is the number of parameters &lt; t \(some constant threshold\)
+For L0 regularization. The constraint is the number of parameters < t (some constant threshold)
 
 Most people never heard about it because LASSO is good enough in the cases that people want to punish some parameters to zero. L0 regularization shares the same function with it. **The difference is L0 is more extreme than L1. The parameters are much easier to be punished to zero.**
 
@@ -872,15 +872,15 @@ If you have 500 features in the pool and you want 10 of them left, you can try L
 
 ## Bias-variance decomposition
 
-![](.gitbook/assets/90%20%281%29.png)
+![](.gitbook/assets/90.png)
 
 ![](.gitbook/assets/91.png)
 
 ![](.gitbook/assets/92.png)
 
-![](.gitbook/assets/93%20%281%29.png)
+![](.gitbook/assets/93.png)
 
-Larger regularization penalty -&gt; high bias – low variance
+Larger regularization penalty -> high bias – low variance
 
 high variance in more complex models means that test and training error can be very diﬀerent
 
@@ -892,7 +892,7 @@ high bias in simplistic models means that training error can be high
 
 k-fold CV
 
-![](.gitbook/assets/95%20%281%29.png)
+![](.gitbook/assets/95.png)
 
 leave-one-out CV:extreme case of k=N
 
@@ -906,7 +906,7 @@ once the hyper-parameters are selected, we can use the whole set for training us
 
 ROC receiver operating characteristic
 
-![](.gitbook/assets/97%20%281%29.png)
+![](.gitbook/assets/97.png)
 
 How to graph: [https://acutecaretesting.org/en/articles/roc-curves-what-are-they-and-how-are-they-used](https://acutecaretesting.org/en/articles/roc-curves-what-are-they-and-how-are-they-used)
 
@@ -951,27 +951,27 @@ Concave function
 
 ## Recognizing convex functions
 
-![](.gitbook/assets/106%20%281%29.png)
+![](.gitbook/assets/106.png)
 
 ## Gradient for linear and logistic
 
-## ![](.gitbook/assets/107%20%281%29.png)
+## ![](.gitbook/assets/107.png)
 
 Partial derivative w.r.t m
 
-![](.gitbook/assets/108%20%281%29.png)
+![](.gitbook/assets/108.png)
 
 ### Time complexity
 
-![](.gitbook/assets/109%20%281%29.png)
+![](.gitbook/assets/109.png)
 
 ### Codes
 
-![](.gitbook/assets/110%20%281%29.png)
+![](.gitbook/assets/110.png)
 
 ![](.gitbook/assets/111.png)
 
-Example: ![](.gitbook/assets/112%20%281%29.png)
+Example: ![](.gitbook/assets/112.png)
 
 ### Learning rate alpha
 
@@ -980,23 +980,23 @@ Learning rate has a signiﬁcant eﬀect on GD
 * **too small**: may take a long time to converge
 * **too large**: it overshoots
 
-![](.gitbook/assets/113%20%281%29.png)
+![](.gitbook/assets/113.png)
 
 ## Stochastic gradient descent
 
 ![](.gitbook/assets/114.png)
 
-Use average \(expected value\)
+Use average (expected value)
 
-| **Batch gradient update** | **Stochastic gradient update** |
-| :--- | :--- |
-| With small learning rate: **guaranteed** improved at each step | The **steps** are “on average” in the right direction |
-| ![](.gitbook/assets/115.png) | ![](.gitbook/assets/116%20%281%29.png) |
-| computes the gradient using the **whole dataset** | Stochastic gradient descent \(SGD\) computes the gradient using a **single sample**. Most applications of SGD actually use a **minibatch** of several samples |
-| Slower | Faster |
-| Directly towards an optimum solution, either local or global | SGD works well for error manifolds that have **lots of local maxima/minima**. In this case, the somewhat noisier gradient calculated using the reduced number of samples tends to jerk the model out of local minima into a region that hopefully is more optimal. |
-| ![](.gitbook/assets/117.png) | ![](.gitbook/assets/118.png) |
-| [https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent) |  |
+| **Batch gradient update**                                                                                                                                                                                              | **Stochastic gradient update**                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| With small learning rate: **guaranteed** improved at each step                                                                                                                                                         | The **steps** are “on average” in the right direction                                                                                                                                                                                                              |
+| ![](.gitbook/assets/115.png)                                                                                                                                                                                           | ![](.gitbook/assets/116.png)                                                                                                                                                                                                                                       |
+| computes the gradient using the **whole dataset**                                                                                                                                                                      | Stochastic gradient descent (SGD) computes the gradient using a **single sample**. Most applications of SGD actually use a **minibatch** of several samples                                                                                                        |
+| Slower                                                                                                                                                                                                                 | Faster                                                                                                                                                                                                                                                             |
+| Directly towards an optimum solution, either local or global                                                                                                                                                           | SGD works well for error manifolds that have **lots of local maxima/minima**. In this case, the somewhat noisier gradient calculated using the reduced number of samples tends to jerk the model out of local minima into a region that hopefully is more optimal. |
+| ![](.gitbook/assets/117.png)                                                                                                                                                                                           | ![](.gitbook/assets/118.png)                                                                                                                                                                                                                                       |
+| [https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent) |                                                                                                                                                                                                                                                                    |
 
 ### Convergence of SGD
 
@@ -1025,7 +1025,7 @@ Grdients will not reach 0 at optimum, how to guarantee convergence: **schedule**
 
 Average moving:
 
-![](.gitbook/assets/124%20%281%29.png)
+![](.gitbook/assets/124.png)
 
 ### Codes
 
@@ -1033,30 +1033,30 @@ Average moving:
 
 ![](.gitbook/assets/126.png)
 
-## Adagrad \(Adaptive gradient\)
+## Adagrad (Adaptive gradient)
 
 * use diﬀerent learning rate for each parameter
 * make the learning rate adaptive
 
 ![](.gitbook/assets/127.png)
 
-useful when parameters are updated at diﬀerent rates \(e.g., NLP\)
+useful when parameters are updated at diﬀerent rates (e.g., NLP)
 
 ![](.gitbook/assets/128.png)
 
 **problem: the learning rate goes to zero too quickly**
 
-## RMSprop \(Root Mean Squared Propagation\)
+## RMSprop (Root Mean Squared Propagation)
 
 ![](.gitbook/assets/129.png)
 
-## Adam \(Adaptive Moment Estimation\)
+## Adam (Adaptive Moment Estimation)
 
 two ideas so far:
 
-1. use momentum to smooth out the oscillations
+1\. use momentum to smooth out the oscillations
 
-2. adaptive per-parameter learning rate
+2\. adaptive per-parameter learning rate
 
 both use exponential moving averages
 
@@ -1092,17 +1092,17 @@ Standard evaluation measures/metrics
 
 ## Performance metrics for classification
 
-**False positive \(type 1\)**
+**False positive (type 1)**
 
-**False negative \(type 2\)**
+**False negative (type 2)**
 
-Eg: patient does not have disease but received positive diagnostic \(Type I error\)
+Eg: patient does not have disease but received positive diagnostic (Type I error)
 
-patient has disease but it was not detected \(Type II error\)  
+patient has disease but it was not detected (Type II error) &#x20;
 
-a message that is not spam is assigned to the spam folder \(Type I error\)
+a message that is not spam is assigned to the spam folder (Type I error)
 
-a message that is spam appears in the regular folder \(Type II error\)
+a message that is spam appears in the regular folder (Type II error)
 
 confusion matrix
 
@@ -1132,11 +1132,11 @@ Report average metrics per class, eg. Average precision
 
 ![](.gitbook/assets/140.png)
 
-## Trade-oﬀ between precision and recall ROC&AUC
+## Trade-oﬀ between precision and recall ROC\&AUC
 
 ![](.gitbook/assets/141.png)
 
-**To compare classiﬁcation algorithms compare their Area Under the Curve \(AUC\)**
+**To compare classiﬁcation algorithms compare their Area Under the Curve (AUC)**
 
 Note that higher AUC doesn’t mean all performance measures are better
 
@@ -1152,7 +1152,7 @@ Note that higher AUC doesn’t mean all performance measures are better
 
 Over-ﬁtting in Model Selection
 
-more severe on small dataset and when having too many hyper-parameters but present even with few hyperparameters \(小数据更易，很多hyper结果跟很少hyper相似\)
+more severe on small dataset and when having too many hyper-parameters but present even with few hyperparameters (小数据更易，很多hyper结果跟很少hyper相似)
 
 ### Nested CV
 
@@ -1184,7 +1184,7 @@ Example
 
 ![](.gitbook/assets/150.png)
 
-**observations**: after ﬁnding a linear separator no further updates happen; the ﬁnal boundary depends on the order of instances \(diﬀerent from all previous methods\)
+**observations**: after ﬁnding a linear separator no further updates happen; the ﬁnal boundary depends on the order of instances (diﬀerent from all previous methods)
 
 ### Issues
 
@@ -1248,7 +1248,7 @@ In hard margin SVM there are, by definition, no misclassifications
 * The Perceptron does not try to optimize the separation "distance". As long as it finds a hyperplane that separates the two sets, it is good. SVM on the other hand tries to maximize the "support vector", i.e., the distance between two closest opposite sample points.
 * The SVM typically tries to use a "kernel function" to project the sample points to high dimension space to make them linearly separable, while the perceptron assumes the sample points are linearly separable.
 
-The major practical difference between a \(kernel\) perceptron and SVM is that **perceptrons can be trained online \(i.e. their weights can be updated as new examples arrive one at a time\)** whereas SVMs cannot be. See this question for information on whether SVMs can be trained online. So, even though a SVM is usually a better classifier, perceptrons can still be useful because they are cheap and easy to re-train in a situation in which fresh training data is constantly arriving.
+The major practical difference between a (kernel) perceptron and SVM is that **perceptrons can be trained online (i.e. their weights can be updated as new examples arrive one at a time)** whereas SVMs cannot be. See this question for information on whether SVMs can be trained online. So, even though a SVM is usually a better classifier, perceptrons can still be useful because they are cheap and easy to re-train in a situation in which fresh training data is constantly arriving.
 
 ### ![](.gitbook/assets/167.png)
 
@@ -1349,9 +1349,9 @@ avoid by:
 
 **Objective**:
 
-ﬁnd a decision tree with K tests minimizing the cost function; alternatively, ﬁnd the **smallest tree \(K\)** that classiﬁes all examples correctly
+ﬁnd a decision tree with K tests minimizing the cost function; alternatively, ﬁnd the **smallest tree (K)** that classiﬁes all examples correctly
 
-Assuming D features, how many diﬀerent partitions of size K+1? the number of full binary trees with K+1 leaves \(regions R\_k \) is the Catalan number ![](.gitbook/assets/188.png)
+Assuming D features, how many diﬀerent partitions of size K+1? the number of full binary trees with K+1 leaves (regions R\_k ) is the Catalan number ![](.gitbook/assets/188.png)
 
 ![](.gitbook/assets/189.png) ![](.gitbook/assets/190.png)
 
@@ -1410,7 +1410,7 @@ Information gain
 
 ![](.gitbook/assets/209.png)
 
-**large decision trees have a high variance – low bias \(low training error, high test error\)**
+**large decision trees have a high variance – low bias (low training error, high test error)**
 
 1. grow **a small tree**
 
@@ -1419,7 +1419,7 @@ substantial reduction in cost may happen after a few steps by stopping early we 
 ## Pruning
 
 1. grow a large tree and then prune it greedily turn an internal node into a leaf node choice is based on the **lowest increase in the cost** repeat this until left with the root node pick the best among the above models using using a validation set
-2. random forests \(later!\)
+2. random forests (later!)
 
 Bootstrap, bagging, and boosting
 
@@ -1439,9 +1439,9 @@ Bootstrap, bagging, and boosting
 
 ![](.gitbook/assets/215.png)
 
-## Bagging \(Bootstrap aggregating\)
+## Bagging (Bootstrap aggregating)
 
-**Use bootstrap for more accurate prediction \(not just uncertainty\)**
+**Use bootstrap for more accurate prediction (not just uncertainty)**
 
 ### Bagging for regression
 
@@ -1474,11 +1474,11 @@ Reduce the correlation between decision trees
 
 Feature sub-sampling
 
-only a random subset \(![](.gitbook/assets/220.png)\) of features are available for split at each step \(further reduce the dependence between decision trees\)
+only a random subset (![](.gitbook/assets/220.png)) of features are available for split at each step (further reduce the dependence between decision trees)
 
 ![](.gitbook/assets/221.png)
 
-### Out of bag \(OOB\) samples
+### Out of bag (OOB) samples
 
 * the instances not included in a bootstrap dataset can be used for validation
 * simultaneous validation of decision trees in a forest
@@ -1490,18 +1490,18 @@ only a random subset \(![](.gitbook/assets/220.png)\) of features are available 
 
 ![](.gitbook/assets/224.png)
 
-**Out Of Bag \(OOB\)** error can be used for parameter tuning \(e.g., size of the forest\)
+**Out Of Bag (OOB)** error can be used for parameter tuning (e.g., size of the forest)
 
 ## Summary
 
 * Bootstrap is a powerful technique to get **uncertainty estimates**
-* Bootstrap aggregation \(Bagging\) can reduce the variance of unstable models
-* Random forests \(**subsample data and features**\):
+* Bootstrap aggregation (Bagging) can reduce the variance of unstable models
+* Random forests (**subsample data and features**):
 * Bagging + further de-correlation of features at each split
 * **OOB validation instead of CV**
 * destroy interpretability of decision trees
 * perform well in practice
-* can fail if only few relevant features exist \(due to feature-sampling\)
+* can fail if only few relevant features exist (due to feature-sampling)
 
 ## Adaptive bases
 
@@ -1521,7 +1521,7 @@ only a random subset \(![](.gitbook/assets/220.png)\) of features are available 
 
 ![](.gitbook/assets/229.png)
 
-note that the loss grows faster than the other surrogate losses \(more sensitive to outliers\)
+note that the loss grows faster than the other surrogate losses (more sensitive to outliers)
 
 ![](.gitbook/assets/230.png)
 
@@ -1581,17 +1581,17 @@ Discrete AdaBoost
 
 two ensemble methods
 
-* bagging & random forests \(reduce variance\)
+* bagging & random forests (reduce variance)
   * produce models with minimal correlation
   * use their average prediction
-* boosting \(reduces the bias of the weak learner\)
+* boosting (reduces the bias of the weak learner)
   * models are added in steps
   * a single cost function is minimized
-  * for exponential loss: interpret as re-weighting the instance \(AdaBoost\)
+  * for exponential loss: interpret as re-weighting the instance (AdaBoost)
   * gradient boosting: ﬁt the weak learner to the negative of the gradient
   * interpretation as L1 regularization for "weak learner"-selection
-  * also related to max-margin classiﬁcation \(for large number of steps T\)
-* random forests and \(gradient\) boosting generally perform very well
+  * also related to max-margin classiﬁcation (for large number of steps T)
+* random forests and (gradient) boosting generally perform very well
 
 ## Some loss functions for gradient boosting
 
@@ -1599,7 +1599,7 @@ two ensemble methods
 
 ## !!!Boosting vs Bagging
 
-1、Bagging \(bootstrap aggregating\)
+1、Bagging (bootstrap aggregating)
 
 Bagging即套袋法，其算法过程如下：
 
@@ -1639,7 +1639,7 @@ Boosting：每一轮的训练集不变，只是训练集中每个样例在分类
 
 Bagging：使用均匀取样，每个样例的权重相等
 
-Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。\(分错多的多权重\)
+Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。(分错多的多权重)
 
 3）预测函数：
 
@@ -1767,7 +1767,7 @@ fully-connected: all outputs of one layer's units are input to all the next unit
 
 ![](.gitbook/assets/282.png)
 
-Data augmentation \(增大\)
+Data augmentation (增大)
 
 ![](.gitbook/assets/283.png)
 
@@ -1791,7 +1791,7 @@ Data augmentation \(增大\)
 
 ![](.gitbook/assets/289.png)
 
-Let's start with **normal dropout**, i.e. dropout only at training time. Here dropout serves as a regularization to **avoid overfitting**. During test time, dropout is not applied; instead, all nodes/connections are present, but the weights are adjusted accordingly\(e.g. multiply the dropout ratio\). Such a model during test time can be understood as a average of an ensemble of neural networks.
+Let's start with **normal dropout**, i.e. dropout only at training time. Here dropout serves as a regularization to **avoid overfitting**. During test time, dropout is not applied; instead, all nodes/connections are present, but the weights are adjusted accordingly(e.g. multiply the dropout ratio). Such a model during test time can be understood as a average of an ensemble of neural networks.
 
 Notice that for normal dropout, at test time the prediction is **deterministic**. _Without other source of randomness, given one test data point, the model will always predict the same label or value_.
 
@@ -1810,7 +1810,7 @@ Example: suppose you trained an dog/cat image classifier with Monte Carlo dropou
 * universal approximation power
 * their expressive power often necessitates using regularization schemes
 
- Gradient Computation & Automatic Differentiation
+&#x20;Gradient Computation & Automatic Differentiation
 
 ## Landscape of the cost function
 
@@ -1852,19 +1852,19 @@ Softmax: ![](.gitbook/assets/300.png)
 
 Code:
 
-def softmax\( u, \# N x K \): u\_exp = np.exp\(u - np.max\(u, 1\)\[:, None\]\)
+def softmax( u, # N x K ): u\_exp = np.exp(u - np.max(u, 1)\[:, None])
 
-return u\_exp / np.sum\(u\_exp, axis=-1\)\[:, None\]
+return u\_exp / np.sum(u\_exp, axis=-1)\[:, None]
 
-xs = np.array\(\[-1, 0, 3, 5\]\)
+xs = np.array(\[-1, 0, 3, 5])
 
-print\(softmax\(xs\)\) \# \[0.0021657, 0.00588697, 0.11824302, 0.87370431\]
+print(softmax(xs)) # \[0.0021657, 0.00588697, 0.11824302, 0.87370431]
 
 Cross entropy: ![](.gitbook/assets/301.png)
 
-def cross\_entropy\(p, q\):
+def cross\_entropy(p, q):
 
- return -sum\(\[p\[i\]\*log2\(q\[i\]\) for i in range\(len\(p\)\)\]\)
+&#x20;return -sum(\[p\[i]\*log2(q\[i]) for i in range(len(p))])
 
 ![](.gitbook/assets/302.png)
 
@@ -1932,7 +1932,7 @@ For example:
 
 ![](.gitbook/assets/319.png)
 
-This is the cost – weight/bias of hidden layer 2, to calculate the ratio between the weights \(and biases\) and the cost function. The ones with the largest ratio will have the greatest impact on the cost function and will give us 'the most bang for our buck'.
+This is the cost – weight/bias of hidden layer 2, to calculate the ratio between the weights (and biases) and the cost function. The ones with the largest ratio will have the greatest impact on the cost function and will give us 'the most bang for our buck'.
 
 Ex. We want to increase the prob to classify it into 2, we would like to know which neuron’s weight/bias/activation has larger influence so that we can adjust them to get our desired output - 2, such as the yellow line.
 
@@ -1944,7 +1944,7 @@ We will have to average the changes
 
 ![](.gitbook/assets/324.png)![](.gitbook/assets/325.png)
 
-Math formula \(output – the last hidden layer\):
+Math formula (output – the last hidden layer):
 
 ![](.gitbook/assets/326.png)
 
@@ -1974,7 +1974,6 @@ Extra hidden layer:
 
 Resources:
 
-[https://mlfromscratch.com/neural-networks-explained/\#backpropagation](https://mlfromscratch.com/neural-networks-explained/#backpropagation)
+[https://mlfromscratch.com/neural-networks-explained/#backpropagation](https://mlfromscratch.com/neural-networks-explained/#backpropagation)
 
 [https://www.youtube.com/watch?v=Ilg3gGewQ5U](https://www.youtube.com/watch?v=Ilg3gGewQ5U)
-

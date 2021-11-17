@@ -6,7 +6,7 @@ description: From 1Point3Acres
 
 ## Machine Learning Algorithm
 
-### 
+###
 
 ### Decision Tree
 
@@ -20,45 +20,45 @@ can be applied to a wide variety of problems including classiﬁcation, regressi
 
 #### Algorithm
 
-1. Search for the best attribute \(spliting criterion\) as node to split the data
+1. Search for the best attribute (spliting criterion) as node to split the data
 2. Use value of split data into separate sets
 3. Repeate step 1 and 2 on each set
 4. Until stoping criteria satisﬁed
-5. \(optional\) Prune tree if overﬁting
+5. (optional) Prune tree if overﬁting
 
-Computational complexity: training - ![](.gitbook/assets/54.png) ; predict: ![](.gitbook/assets/55.png)
+Computational complexity: training - ![](<.gitbook/assets/54 (1).png>) ; predict: ![](<.gitbook/assets/55 (1).png>)
 
 #### Spliting criterion
 
-mutual information/information gain: ![](.gitbook/assets/56%20%281%29.png) ; highest Error rate: lowest
+mutual information/information gain: ![](<.gitbook/assets/56 (1).png>) ; highest Error rate: lowest
 
-Gini: ![](.gitbook/assets/57%20%281%29.png)
+Gini: ![](<.gitbook/assets/57 (1).png>)
 
 #### Stoping critierion
 
-spliting criterion &lt; threshold achieve maximum depth
+spliting criterion < threshold achieve maximum depth
 
 Split is not statistically signiﬁcant grow the entire tree, then prune
 
 #### Pruning
 
-Evaluate impact on validation set of pruning each possible node \(plus those below it\) Greedyliy remove the one that most improves validation set accuracy
+Evaluate impact on validation set of pruning each possible node (plus those below it) Greedyliy remove the one that most improves validation set accuracy
 
 Do until further pruning is harmful
 
 #### Inductive Bias
 
-ID3 \(greedy search\) prefer smallest tree that match data with high mutual information near top of the tree \(relatively small\)
+ID3 (greedy search) prefer smallest tree that match data with high mutual information near top of the tree (relatively small)
 
 #### Random Forest
 
-RF is an emsemble \(bagging\) of decision trees. RF uses bagging and feature randomness when building each tree to try to create an uncorrelated forest of trees.
+RF is an emsemble (bagging) of decision trees. RF uses bagging and feature randomness when building each tree to try to create an uncorrelated forest of trees.
 
 Ensemble methods, which combines several decision trees to produce better predictive performance than utilizing a single decision tree. The main principle behind the ensemble model is that a group of weak learners come together to form a strong learner.
 
 Bagging is used when our goal is to reduce variance
 
-Boosting is another ensemble technique to create a collection of predictors. In this technique, learners are learned sequentially with early learners ﬁtting simple models to the data and then analyzing data for errors. In other words, we ﬁt consecutive trees \(random sample\) and at every step, the goal is to solve for net error from the prior tree.
+Boosting is another ensemble technique to create a collection of predictors. In this technique, learners are learned sequentially with early learners ﬁtting simple models to the data and then analyzing data for errors. In other words, we ﬁt consecutive trees (random sample) and at every step, the goal is to solve for net error from the prior tree.
 
 Reference: [https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9](https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9)
 
@@ -66,11 +66,11 @@ Feature importance is calculated as the decrease in node impurity weighted by th
 
 Why RF?
 
-The single decision tree is very sensitive to data variations\(high variance low bias\), which can easily overﬁt to noise in the data. RF can avoid.
+The single decision tree is very sensitive to data variations(high variance low bias), which can easily overﬁt to noise in the data. RF can avoid.
 
 RF can be trained in parallel
 
-Quick prediction/trianing \(advantage of DT based models\) great with high dimensionallity with highly correlated features.
+Quick prediction/trianing (advantage of DT based models) great with high dimensionallity with highly correlated features.
 
 Handles missing values and maintains accuracy for missing data.
 
@@ -78,7 +78,7 @@ Robust to outliers and non-linear data: RF handles outliers by essentially binni
 
 Generalization error for free: no CV needed, give a unbaised estimate
 
-OOB \(Out-of-bag\) score
+OOB (Out-of-bag) score
 
 way of validating RF
 
@@ -92,7 +92,7 @@ validation score calculated using all DTs, OOB use subset of DTs
 
 validation set validation dataset before training, OOB still use the OOB samples when training
 
-OOB reduce the overall aggregation eﬀect in bagging \(use only subset of DTs\). When dataset is not big enough, use OOB. Otherwise, use validation score.
+OOB reduce the overall aggregation eﬀect in bagging (use only subset of DTs). When dataset is not big enough, use OOB. Otherwise, use validation score.
 
 Reference: [https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710](https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710)
 
@@ -100,7 +100,7 @@ Overﬁtting
 
 RF tend to overﬁt as you add more trees
 
-Tuning hyperparameters \(obtained by cross validation\): \# of trees \(higher number of trees will only reduce variance not bias\), \# attributes, depth of tree
+Tuning hyperparameters (obtained by cross validation): # of trees (higher number of trees will only reduce variance not bias), # attributes, depth of tree
 
 Real world application
 
@@ -140,7 +140,7 @@ Works well with interactions.
 
 Boosting focuses step by step on diﬃcult examples that give a nice strategy to deal with unbalanced datasets by strengthening the impact of the positive class.
 
-It performs the optimization in function space \(rather than in parameter space\) which makes the use of custom loss functions much easier.
+It performs the optimization in function space (rather than in parameter space) which makes the use of custom loss functions much easier.
 
 Prone to over-ﬁtting Sensitive to noise
 
@@ -150,9 +150,9 @@ Improvement
 
 Tree Constraints
 
-It's important to keep the tree as a weak learner \(why?\)
+It's important to keep the tree as a weak learner (why?)
 
-number of trees, tree depth, \# of leaves, Number of observations per split, minimum loss improvement Shrinkage
+number of trees, tree depth, # of leaves, Number of observations per split, minimum loss improvement Shrinkage
 
 contribution of each tree to this sum can be weighted to slow down the learning by the algorithm. Use learning rate shrinkage
 
@@ -164,7 +164,7 @@ GBT with random sampling also called Stochastic Gradient Boosting
 
 Penalized Learning
 
-Classical decision trees like CART are not used as weak learners, instead a modiﬁed form called a regression tree is used that has numeric values in the leaf nodes \(also called terminal nodes\). The values in the leaves of the trees can be called weights in some literature.
+Classical decision trees like CART are not used as weak learners, instead a modiﬁed form called a regression tree is used that has numeric values in the leaf nodes (also called terminal nodes). The values in the leaves of the trees can be called weights in some literature.
 
 As such, the leaf weight values of the trees can be regularized using popular regularization functions, such as:
 
@@ -216,15 +216,15 @@ Reference: [https://medium.com/@aravanshad/gradient-boosting-versus-random-fores
 
 #### Algorithm
 
-![](.gitbook/assets/58.png)Train: store data
+![](<.gitbook/assets/58 (1).png>)Train: store data
 
-![](.gitbook/assets/59%20%281%29.png)![](.gitbook/assets/60%20%281%29.png)Predict: Assign the most common label of the nearest point in computation complexity: training - ![](.gitbook/assets/61.png) ; predict - ![](.gitbook/assets/62.png)
+![](<.gitbook/assets/59 (1).png>)![](<.gitbook/assets/60 (1).png>)Predict: Assign the most common label of the nearest point in computation complexity: training - ![](<.gitbook/assets/61 (1).png>) ; predict - ![](<.gitbook/assets/62 (1).png>)
 
 K increase, model tend to overﬁting; if K=N, majority vote
 
 #### Distance functions
 
-![](.gitbook/assets/63.png)Euclidean distance\(most common\): Manhattan distance:
+![](<.gitbook/assets/63 (1).png>)Euclidean distance(most common): Manhattan distance:
 
 #### Break tie
 
@@ -236,15 +236,15 @@ Remove the farest one Weighted vote
 
 Nearby points should have similar label
 
-All dimensions are created equally \(KNN suﬀers dimension curse, use all features equally\)
+All dimensions are created equally (KNN suﬀers dimension curse, use all features equally)
 
 ### Perceptron
 
-Compare to DT \(use subset of features\) and KNN \(use all features equally\), perceptron learns weights for features.
+Compare to DT (use subset of features) and KNN (use all features equally), perceptron learns weights for features.
 
 #### Algorithm
 
-initialize parameters to vector of all zeroes while not converged![](.gitbook/assets/64%20%281%29.png)![](.gitbook/assets/65.png)
+initialize parameters to vector of all zeroes while not converged![](<.gitbook/assets/64 (1).png>)![](<.gitbook/assets/65 (1).png>)
 
 receive next example predict
 
@@ -252,43 +252,43 @@ if ,
 
 #### Perceptron mistake bound
 
-![](.gitbook/assets/66.png)If data has margin and all points inside a ball of radius , then Perceptron makes ![](.gitbook/assets/67%20%281%29.png) mistakes.
+![](<.gitbook/assets/66 (1).png>)If data has margin and all points inside a ball of radius , then Perceptron makes ![](<.gitbook/assets/67 (1).png>) mistakes.
 
 Normalized margin: multiplying all points by 100, or dividing all points by 100, doesn’t change the number of mistakes; algo is invariant to scaling.
 
-Assumption: ﬁnite size inputs & linearly separble data \(if not linearly separable, perceptron will not converge\)
+Assumption: ﬁnite size inputs & linearly separble data (if not linearly separable, perceptron will not converge)
 
 #### Inductive bias
 
 Decision boundary should be linear
 
-prefer to correct most recent mistakes \(online learning\)
+prefer to correct most recent mistakes (online learning)
 
 #### Interpretation
 
-goal of update is to adjust the parameters so that they are better for current \(most recent\) example
+goal of update is to adjust the parameters so that they are better for current (most recent) example
 
 In online learning, order of data matters
 
-features with large absolute value of weights are most sensitive to make predictions \(need to scale feature before modeling\)
+features with large absolute value of weights are most sensitive to make predictions (need to scale feature before modeling)
 
 #### Extension
 
 Voted Perceptron
 
-generalizes better than \(standard\) perceptron
+generalizes better than (standard) perceptron
 
-memory intensive \(keeps around every weight vector seen during training, so each one can vote\)
+memory intensive (keeps around every weight vector seen during training, so each one can vote)
 
 Averaged Perceptron
 
 empirically similar performance to voted perceptron
 
-can be implemented in a memory eﬃcient way \(running averages are eﬃcient\)
+can be implemented in a memory eﬃcient way (running averages are eﬃcient)
 
 Kernel Perceptron
 
-Choose a kernel ![](.gitbook/assets/68%20%281%29.png)
+Choose a kernel ![](<.gitbook/assets/68 (1).png>)
 
 Apply the kerne ltrick to Perceptron Resulting algorithm is still very simple
 
@@ -300,7 +300,7 @@ Basic idea can also be applied when y ranges over an exponentially large set Mis
 
 **linear function: aﬃne combination of variables**
 
-Linear regression capture statistical relationship not deterministic relationship closed form solution:![](.gitbook/assets/69%20%281%29.png)![](.gitbook/assets/70%20%281%29.png)
+Linear regression capture statistical relationship not deterministic relationship closed form solution:![](<.gitbook/assets/69 (1).png>)![](<.gitbook/assets/70 (1).png>)
 
 Model evaluation: R-square. Indicated how much the variation in Y explained by model Null hypothese and P-value
 
@@ -310,9 +310,9 @@ Assumption:
 
 Linear relationship
 
-scatter plot between each independent variable and dependent variable Pearson correlation between each independent variable and dependent variable, df.corr\(dependent.var\)
+scatter plot between each independent variable and dependent variable Pearson correlation between each independent variable and dependent variable, df.corr(dependent.var)
 
-multivariate normality \(residual are normally distributed\)
+multivariate normality (residual are normally distributed)
 
 plotting a q-q plot to check
 
@@ -324,7 +324,7 @@ reduce the precision of the estimate coeﬃcients, which weakens the power of re
 
 plotting the residuals against the values predicted by the regression model
 
-if not met, it may be possible to transformthe outcome measure \(dependent variable\) Residual are statistically independent: data are random sample of population
+if not met, it may be possible to transformthe outcome measure (dependent variable) Residual are statistically independent: data are random sample of population
 
 Why need intercept term:
 
@@ -334,13 +334,13 @@ guarantees the least squares slopes estimates are unbiased
 
 Data preparation
 
-Linear Assumption. Linear regression assumes that the relationship between your input and output is linear. You may need to transform data to make the relationship linear \(e.g. log transform for an exponential relationship\). Remove Noise. Linear regression assumes that your input and output variables are not noisy. Consider using
+Linear Assumption. Linear regression assumes that the relationship between your input and output is linear. You may need to transform data to make the relationship linear (e.g. log transform for an exponential relationship). Remove Noise. Linear regression assumes that your input and output variables are not noisy. Consider using
 
-data cleaning operations that let you better expose and clarify the signal in your data. This is most important for the output variable and you want to remove outliers in the output variable \(y\) if possible.
+data cleaning operations that let you better expose and clarify the signal in your data. This is most important for the output variable and you want to remove outliers in the output variable (y) if possible.
 
 Remove Collinearity. Linear regression will over-ﬁt your data when you have highly correlated input variables. Consider calculating pairwise correlations for your input data and removing the most correlated.
 
-Gaussian Distributions. Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. You may get some beneﬁt using transforms \(e.g. log or BoxCox\) on you variables to make their distribution more Gaussian looking.
+Gaussian Distributions. Linear regression will make more reliable predictions if your input and output variables have a Gaussian distribution. You may get some beneﬁt using transforms (e.g. log or BoxCox) on you variables to make their distribution more Gaussian looking.
 
 Rescale Inputs: Linear regression will often make more reliable predictions if you rescale input variables using standardization or normalization.
 
@@ -348,15 +348,15 @@ Rescale Inputs: Linear regression will often make more reliable predictions if y
 
 R square/adjusted R square
 
-F test: hypothese ![](.gitbook/assets/71.png) : all regression coeﬃcients are equal to zero RMSE
+F test: hypothese ![](<.gitbook/assets/71 (1).png>) : all regression coeﬃcients are equal to zero RMSE
 
 #### Variant
 
-Lasso regression: where Ordinary Least Squares is modiﬁed to also minimize the absolute sum of the coeﬃcients \(called L1 regularization\).
+Lasso regression: where Ordinary Least Squares is modiﬁed to also minimize the absolute sum of the coeﬃcients (called L1 regularization).
 
 parameter shrinkage & variable selection automatically
 
-Ridge regression: where Ordinary Least Squares is modiﬁed to also minimize the squared absolute sum of the coeﬃcients \(called L2 regularization\).
+Ridge regression: where Ordinary Least Squares is modiﬁed to also minimize the squared absolute sum of the coeﬃcients (called L2 regularization).
 
 doesn't zero out coeﬃcients
 
@@ -370,9 +370,9 @@ Logistic Regression often referred as logit model is a technique to predict the 
 
 #### Basics
 
-Bayes optimal classifer: classiﬁer that minimized the error in a probabilistic manner. Maximum Likehood Estimation \(MLE\) to evaluation performance
+Bayes optimal classifer: classiﬁer that minimized the error in a probabilistic manner. Maximum Likehood Estimation (MLE) to evaluation performance
 
-Assumptions: categorical outputs; no outliers; no high correlations \(multicollinearity\) among the predictors; independent variables are linearly related to the log odds.
+Assumptions: categorical outputs; no outliers; no high correlations (multicollinearity) among the predictors; independent variables are linearly related to the log odds.
 
 What are odds? What is odds ratio?
 
@@ -380,13 +380,13 @@ odds is the ratio of the probability of an event occurring tothe probability of 
 
 #### Algorithm
 
-![](.gitbook/assets/72%20%281%29.png)Hypotheis function: ![](.gitbook/assets/73.png) , model the conditional probability ![](.gitbook/assets/74.png) is the logistic model, outputs the logits
+![](<.gitbook/assets/72 (1).png>)Hypotheis function: ![](<.gitbook/assets/73 (1).png>) , model the conditional probability ![](<.gitbook/assets/74 (1).png>) is the logistic model, outputs the logits
 
-Loss function:![](.gitbook/assets/75.png)![](.gitbook/assets/76%20%281%29.png)
+Loss function:![](<.gitbook/assets/75 (1).png>)![](<.gitbook/assets/76 (1).png>)
 
 despite the fact that support vector machines and logistic regression are often framed in very diﬀerent ways, both the formulations and results are quite similar here. The only diﬀerence between the two algorithms comes from their loss functions
 
-hinge loss and logistic loss share similar properties in terms of the overall nature of the loss: they both approach zero for hθ\(x\)⋅y large positive \(hinge loss actually attains the zero value\), and they both are approximately linear for hθ\(x\)⋅y large negative. Not surprisingly, then, they both result in very similar \(though not exactly identical\) separating hyperplanes for particular problem.
+hinge loss and logistic loss share similar properties in terms of the overall nature of the loss: they both approach zero for hθ(x)⋅y large positive (hinge loss actually attains the zero value), and they both are approximately linear for hθ(x)⋅y large negative. Not surprisingly, then, they both result in very similar (though not exactly identical) separating hyperplanes for particular problem.
 
 Optimization: gradient descent
 
@@ -394,7 +394,7 @@ Optimization: gradient descent
 
 Intecept is the baseline. it's the log odds for an instance when all attributes are zero.
 
-coeﬃcient ![](.gitbook/assets/77.png) the value by which the log odds change by a unit change in a particular attribute by keeping all other attributes ﬁxed or unchanged \(control variables\).
+coeﬃcient ![](<.gitbook/assets/77 (1).png>) the value by which the log odds change by a unit change in a particular attribute by keeping all other attributes ﬁxed or unchanged (control variables).
 
 Decision boundary is a line that separates the target variables
 
@@ -404,7 +404,7 @@ Two multiclass classiﬁcation methods:
 
 one versus all method - create k diﬀerent binary classiﬁer; softmax loss/cross entropy loss
 
-Model: ![](.gitbook/assets/78.png)
+Model: ![](<.gitbook/assets/78 (1).png>)
 
 Learning with MLE
 
@@ -412,11 +412,11 @@ reference: [https://towardsdatascience.com/logistic-regression-detailed-overview
 
 ### Neural Network
 
-MLPs are universal function approximator with enough width and depth \(a single preceptron cannot compute XOR\)
+MLPs are universal function approximator with enough width and depth (a single preceptron cannot compute XOR)
 
 #### Algorithm
 
-Hypothesis: non-linear hypothesis function, which involve compositions of multiple linear operators \(e.g. matrix multiplications\) and elementwise nonlinear functions
+Hypothesis: non-linear hypothesis function, which involve compositions of multiple linear operators (e.g. matrix multiplications) and elementwise nonlinear functions
 
 Loss: classiﬁcation: sigmoid, softmax; regression: MSE Optimization: gradient descent / SGD
 
@@ -424,7 +424,7 @@ Backpropagation: reuse computation from the forward pass and reuse partial deriv
 
 #### Non-linear functions/activations
 
-With activation functions, NN is a universal map from entire domain of input values to entire range of output activation. \(make nn diﬀerentiable\)
+With activation functions, NN is a universal map from entire domain of input values to entire range of output activation. (make nn diﬀerentiable)
 
 Tahn Sigmoid
 
@@ -436,11 +436,11 @@ Why need convolutional layer
 
 fully connected deep network require a huge number of parameters
 
-don't capture the natrual invariance we expected in images \(location, scale\). In many problems, location of pattern is not important, only presence of pattern matters. Therefore, we need to scan for patterns.
+don't capture the natrual invariance we expected in images (location, scale). In many problems, location of pattern is not important, only presence of pattern matters. Therefore, we need to scan for patterns.
 
 Convolutional layer
 
-Output size = \[\(N-M\)/S\] + 1, image size: N\*M, ﬁlter: M\*M, stride: S Also common to use 3D convolutions to combine multiple channels still linear layer
+Output size = \[(N-M)/S] + 1, image size: N\*M, ﬁlter: M\*M, stride: S Also common to use 3D convolutions to combine multiple channels still linear layer
 
 Poolling layer: max pooling, mean pooling
 
@@ -456,19 +456,19 @@ structure design: add hidden states into to NN. By unrolling the RNN through tim
 
 Navies Bayes relies heavily on probabilistic modeling.
 
-basic idea: model input and output as random variables to ﬁnd ![](.gitbook/assets/80%20%281%29.png)
+basic idea: model input and output as random variables to ﬁnd ![](<.gitbook/assets/80 (1).png>)
 
-Based on Bayes rule, the problem transformed to ﬁnd ![](.gitbook/assets/81.png) \( ![](.gitbook/assets/82%20%281%29.png) \) Assumption: features are conditionally independent
+Based on Bayes rule, the problem transformed to ﬁnd ![](<.gitbook/assets/81 (1).png>) ( ![](<.gitbook/assets/82 (1).png>) ) Assumption: features are conditionally independent
 
-![](.gitbook/assets/83%20%281%29.png)![](.gitbook/assets/84.png)Modeling full distribution for high-dimensional is not practical, so we’re going to make the naive
+![](<.gitbook/assets/83 (1).png>)![](<.gitbook/assets/84 (1).png>)Modeling full distribution for high-dimensional is not practical, so we’re going to make the naive
 
-![](.gitbook/assets/85.png)![](.gitbook/assets/86.png)Bayes assumption, that the elements are conditionally independent given : ![](.gitbook/assets/87%20%281%29.png)
+![](<.gitbook/assets/85 (1).png>)![](<.gitbook/assets/86 (1).png>)Bayes assumption, that the elements are conditionally independent given : ![](<.gitbook/assets/87 (1).png>)
 
 #### Algorithm
 
-Specify distribution for ![](.gitbook/assets/88.png) and seperate distribution for each ![](.gitbook/assets/89%20%281%29.png) Estimate parameters of distributions using MLE
+Specify distribution for ![](<.gitbook/assets/88 (1).png>) and seperate distribution for each ![](<.gitbook/assets/89 (1).png>) Estimate parameters of distributions using MLE
 
-We are actually using MAP here, ![](.gitbook/assets/90.png) is the prior
+We are actually using MAP here, ![](<.gitbook/assets/90 (1).png>) is the prior
 
 Prediction: given data point , calculate probability of each class and take the maximum as predicted result
 
@@ -476,7 +476,7 @@ Prediction: given data point , calculate probability of each class and take the 
 
 Use log of probabilities to avoid underﬂow problem smoothing
 
-To avoid zero divider problem, add smoothing term \(Laplace smoothing\)
+To avoid zero divider problem, add smoothing term (Laplace smoothing)
 
 ### SVM
 
@@ -492,9 +492,9 @@ Loss: hinge loss + regularization term
 
 Optimization: quadratic programming
 
-Hyperparameters: regularization term. Gamma \(deﬁnes how far the inﬂuence of a single training example reached\)
+Hyperparameters: regularization term. Gamma (deﬁnes how far the inﬂuence of a single training example reached)
 
-![](.gitbook/assets/92%20%281%29.png)![](.gitbook/assets/93.png)
+![](<.gitbook/assets/92 (1).png>)![](<.gitbook/assets/93 (1).png>)
 
 [picture source: https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812eﬀ c72](https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72)
 
@@ -504,7 +504,7 @@ SVM vs. perceptron
 
 perceptron can be trained online, SVM can't
 
-SVM looks at maximizing margin, perceptron reduce error \(pay attention to most recent data\)
+SVM looks at maximizing margin, perceptron reduce error (pay attention to most recent data)
 
 SVM vs. logistic regression
 
@@ -518,9 +518,9 @@ SVM can use kernel function to capture non-linear decision boundary while logist
 
 [Kernel: https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theore m-e1e6848c6c4d](https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theorem-e1e6848c6c4d)
 
-### 
+###
 
-### 
+###
 
 ## Other Questions
 
@@ -536,7 +536,7 @@ It also changed our way of feature engineering
 
 #### Neural network
 
-Say your family goes out for a dinner to some restaurant, which serves some really good Soup, your family tastes it and loves it. On coming back home they tell you about the soup and you want to replicate the soup at your home. Now you start and you have 10 chances to come up with that soup, and you start preparing and every time you try the combination of recipe, you give it to your parents to taste it and start taking their feedback and make changes each time, and ﬁnally you come with that perfect Soup that you wanted to make, that’s it, your neural network is made. The ingredients that you used are the input to your neural networks, the weights of the neural network are analogous to the right quantity of salt, spice, temperature, duration etc., the 10 chances are your epochs or iterations, and the feedback that your parents\(poor guys who had to taste your soup all throughout\) give are the losses and if you are any good you would see that their feedback improves over time, if not buddy you got to stop and try something else.
+Say your family goes out for a dinner to some restaurant, which serves some really good Soup, your family tastes it and loves it. On coming back home they tell you about the soup and you want to replicate the soup at your home. Now you start and you have 10 chances to come up with that soup, and you start preparing and every time you try the combination of recipe, you give it to your parents to taste it and start taking their feedback and make changes each time, and ﬁnally you come with that perfect Soup that you wanted to make, that’s it, your neural network is made. The ingredients that you used are the input to your neural networks, the weights of the neural network are analogous to the right quantity of salt, spice, temperature, duration etc., the 10 chances are your epochs or iterations, and the feedback that your parents(poor guys who had to taste your soup all throughout) give are the losses and if you are any good you would see that their feedback improves over time, if not buddy you got to stop and try something else.
 
 source: [https://medium.com/datadriveninvestor/artiﬁcial-neural-networks-explained-to-5-year-old-5ceb532c11cc](https://medium.com/datadriveninvestor/artificial-neural-networks-explained-to-5-year-old-5ceb532c11cc)
 
@@ -546,7 +546,7 @@ Let's say you got several very great candidates but you only have one headcount 
 
 #### Linear regression
 
-Linear regression is a way of ﬁnding a relationship between a single, continuous variable called DV or Y and one or more other variables \(continuous or not\) called IV or X.
+Linear regression is a way of ﬁnding a relationship between a single, continuous variable called DV or Y and one or more other variables (continuous or not) called IV or X.
 
 Imagine you are a owner of an ice cream shop. You want to know what's the relationship between the temperature and sales of ice cream. So you collect sales data and weather data from past two years. And you draw this data on paper and try to draw a line that looks like best capture the trend or the relationship between this two variables.
 
@@ -560,15 +560,14 @@ Reinforcement Learning is learning what to do and how to map situations to actio
 
 #### PCA
 
-Principal Components Analysis \(PCA\) is a technique that ﬁnds underlying variables \(known as principal components\) that best diﬀerentiate your data points.
+Principal Components Analysis (PCA) is a technique that ﬁnds underlying variables (known as principal components) that best diﬀerentiate your data points.
 
 A principal component can be expressed by one or more existing variables. For example, we may use a single variable
 
-- vitamin C - to diﬀerentiate food items. Because vitamin C is present in vegetables but absent in meat, the resulting plot \(below, left\) will diﬀerentiate vegetables from meat, but meat items will clumped together.
+\- vitamin C - to diﬀerentiate food items. Because vitamin C is present in vegetables but absent in meat, the resulting plot (below, left) will diﬀerentiate vegetables from meat, but meat items will clumped together.
 
 To spread the meat items out, we can use fat content in addition to vitamin C levels, since fat is present in meat but absent in vegetables. However, fat and vitamin C levels are measured in diﬀerent units. So to combine the two variables, we ﬁrst have to normalize them, meaning to shift them onto a uniform standard scale, which would allow us to calculate a new variable - vitamin C minus fat. Combining the two variables helps to spread out both vegetable and meat items.
 
-The spread can be further improved by adding ﬁber, of which vegetable items have varying levels. This new variable - \(vitamin C + ﬁber\) minus fat - achieves the best data spread yet.
+The spread can be further improved by adding ﬁber, of which vegetable items have varying levels. This new variable - (vitamin C + ﬁber) minus fat - achieves the best data spread yet.
 
 [https://www.quora.com/What-is-an-intuitive-explanation-for-PCA](https://www.quora.com/What-is-an-intuitive-explanation-for-PCA)
-

@@ -4,11 +4,11 @@
 
 ### ML basic assumptions & deﬁnition
 
-Probabilistic model: the dataset generating distribution of \(input, output\) pair, model gives high probability to reasonal \(input, output\) pairs. Here, we don't make any assumption about what distribution looks like.
+Probabilistic model: the dataset generating distribution of (input, output) pair, model gives high probability to reasonal (input, output) pairs. Here, we don't make any assumption about what distribution looks like.
 
 Deﬁnition of ML:
 
-![](.gitbook/assets/32%20%281%29.png)![](.gitbook/assets/33.png)![](.gitbook/assets/34.png)![](.gitbook/assets/35%20%281%29.png)Given loss function and sample D from unkonwn distribution , compute a function that has low expected error over with respect to
+![](<.gitbook/assets/32 (1).png>)![](<.gitbook/assets/33 (1).png>)![](<.gitbook/assets/34 (1).png>)![](<.gitbook/assets/35 (1).png>)Given loss function and sample D from unkonwn distribution , compute a function that has low expected error over with respect to
 
 Key assumption: target function unknown; candidate hypothesis approximate the target function
 
@@ -22,19 +22,19 @@ hyperparameters are the tunable aspects of the model, that the learning algorith
 
 Structure of ML alogrithm
 
-Inputs \(features\): ![](.gitbook/assets/36.png)
+Inputs (features): ![](<.gitbook/assets/36 (1).png>)
 
-![](.gitbook/assets/37%20%281%29.png)Outputs:
+![](<.gitbook/assets/37 (1).png>)Outputs:
 
 Parameters: .
 
-Hypothesis function:![](.gitbook/assets/38.png)![](.gitbook/assets/39%20%281%29.png)
+Hypothesis function:![](<.gitbook/assets/38 (1).png>)![](<.gitbook/assets/39 (1).png>)
 
 Loss function/objective function: Canonical optimization problem:
 
-### Optimization \(gradient descent\)
+### Optimization (gradient descent)
 
-Gradient descent: is a ﬁrst-order iterative optimization algorithm for ﬁnding the minimum of a function. To ﬁnd a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient \(or approximate gradient\) of the function at the current point. \(from wikipedia\)
+Gradient descent: is a ﬁrst-order iterative optimization algorithm for ﬁnding the minimum of a function. To ﬁnd a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. (from wikipedia)
 
 algorithm: simply repeatedly take small steps in the derivative of the negative partial derivatives, for each coordinate of our parameters.
 
@@ -46,7 +46,7 @@ Computational complexity of OLS closed form solution
 
 There are situations where we can not ﬁnd a closed-from solution Appendix: Big O for vector/matrix multiplication
 
-Inner product :![](.gitbook/assets/41%20%281%29.png)![](.gitbook/assets/42%20%281%29.png)![](.gitbook/assets/43.png)
+Inner product :![](<.gitbook/assets/41 (1).png>)![](<.gitbook/assets/42 (1).png>)![](<.gitbook/assets/43 (1).png>)
 
 Matrix-vector product Matrix-matrix product Matrix inverse :
 
@@ -76,17 +76,17 @@ probabilistic learning: come up with some random variables and distribution such
 
 ### Generative vs. Discriminative models
 
-Both models predicting ![](.gitbook/assets/45%20%281%29.png)
+Both models predicting ![](<.gitbook/assets/45 (1).png>)
 
-Generative: models the actual distribution of each class joint probability ![](.gitbook/assets/46.png)
+Generative: models the actual distribution of each class joint probability ![](<.gitbook/assets/46 (1).png>)
 
 assume features are conditional independent
 
-![](.gitbook/assets/47%20%281%29.png)Estimate parameters of directly from training data Use Bayes rule to calculate
+![](<.gitbook/assets/47 (1).png>)Estimate parameters of directly from training data Use Bayes rule to calculate
 
 example: Naive Bayes, GAN, HMM, Bayesian networks Discriminative: models the decisition bounday between classes
 
-conditional probability ![](.gitbook/assets/48.png)
+conditional probability ![](<.gitbook/assets/48 (1).png>)
 
 Example: logistic regression, Traditional neural networks G or D?
 
@@ -120,7 +120,7 @@ the complexity of the model is bounded even if the amount of data is unbounded
 
 Examples: linear regression, logistic regression, linear SVM, k-means, hidden Markov models, PCA Nonparametric models: number of parameters grows with the size of the training set
 
-No assumptions \(or weak assumptions\) about the underlying function. “distribution” or \(quasi\) assumption-free model, more ﬂexbile Require more training data to estimate the mapping function.
+No assumptions (or weak assumptions) about the underlying function. “distribution” or (quasi) assumption-free model, more ﬂexbile Require more training data to estimate the mapping function.
 
 Examples: K-nearest neighbor, decision trees, or RBF kernel SVMs, Gaussian processes
 
@@ -130,11 +130,11 @@ Examples: K-nearest neighbor, decision trees, or RBF kernel SVMs, Gaussian proce
 
 Characterizing bias vs. variance
 
-Consider the training and testing loss of your algorithm \(often plotting over diﬀerent numbers of samples\), to determine if you problem is one of high bias or high variance
+Consider the training and testing loss of your algorithm (often plotting over diﬀerent numbers of samples), to determine if you problem is one of high bias or high variance
 
 ![](.gitbook/assets/51.jpeg)
 
-For high bias, add features based upon your own intuition of how you solved the problem For high variance, add data or remove features \(keeping features based upon your intuition\)
+For high bias, add features based upon your own intuition of how you solved the problem For high variance, add data or remove features (keeping features based upon your intuition)
 
 Characterizing optimization performance
 
@@ -148,13 +148,13 @@ Bias
 
 learner's tendency to consistently learn the same wrong thing Means how well the model ﬁts the data
 
-A high bias error means under-performance \(underﬁt\) model, which cannot be solved by adding more data
+A high bias error means under-performance (underﬁt) model, which cannot be solved by adding more data
 
 Fix high bias: get additionall features, decrese regularization parameter
 
 Variance
 
-learner's tendency to learn random things irrespective of real signal, lack of generalization ability means the magnitude of the change in the model based on the changes in the data \(overﬁt\)
+learner's tendency to learn random things irrespective of real signal, lack of generalization ability means the magnitude of the change in the model based on the changes in the data (overﬁt)
 
 Fix high variance: get more data, try smaller set of features, increase regularization parameter
 
@@ -164,7 +164,7 @@ Fix high variance: get more data, try smaller set of features, increase regulari
 
 Underﬁtting: simple model, unable to capture the trends in data, exhibit to much bias Overﬁtting: complex model, ﬁt noise in the data, does not have enough bias
 
-![](.gitbook/assets/2%20%281%29.png) --&gt; overﬁts
+![](<.gitbook/assets/2 (1).png>) --> overﬁts
 
 #### Cross-validation
 
@@ -186,7 +186,7 @@ Both assumes access to a function capable of measuing the quality of a model Bot
 
 ## Ensemble
 
-Ensemble is the art of combining diverse set of learners\(Individual models\) together to improvise on the stability and predictive power of the model.
+Ensemble is the art of combining diverse set of learners(Individual models) together to improvise on the stability and predictive power of the model.
 
 Why ensemble: increase the stability of the ﬁnal model and recude error
 
@@ -210,29 +210,29 @@ the generalization error of the boosting hypothesis is bounded by the distributi
 
 Increase the predictive force of classiﬁer
 
-a new model is trained from the combined predictions of two \(or more\) previous model
+a new model is trained from the combined predictions of two (or more) previous model
 
 ## Loss functions
 
 #### loss functions for classiﬁcation
 
-least square: ![](.gitbook/assets/3.png) ; highly aﬀected by outliers![](.gitbook/assets/4.png)
+least square: ![](<.gitbook/assets/3 (1).png>) ; highly aﬀected by outliers![](<.gitbook/assets/4 (1).png>)
 
-Zero-one loss: ![](.gitbook/assets/5%20%281%29.png) ; diﬃcult to optimize; non-smooth; least sensitive to outliers
+Zero-one loss: ![](<.gitbook/assets/5 (1).png>) ; diﬃcult to optimize; non-smooth; least sensitive to outliers
 
-Logistic loss: ; for large positive values, logistic lass will be close to 0, for large negative values, the loss increase approximately linearly, where y∈{−1,1}![](.gitbook/assets/6.png)![](.gitbook/assets/7.png)
+Logistic loss: ; for large positive values, logistic lass will be close to 0, for large negative values, the loss increase approximately linearly, where y∈{−1,1}![](<.gitbook/assets/6 (1).png>)![](<.gitbook/assets/7 (1).png>)
 
-Hinge loss: ![](.gitbook/assets/8.png) ![](.gitbook/assets/9.png) Exponential loss:![](.gitbook/assets/10.png)![](.gitbook/assets/11.png)
+Hinge loss: ![](<.gitbook/assets/8 (1).png>) ![](<.gitbook/assets/9 (1).png>) Exponential loss:![](<.gitbook/assets/10 (1).png>)![](<.gitbook/assets/11 (1).png>)
 
 ![](.gitbook/assets/12.jpeg)
 
-Cross entropy loss ![](.gitbook/assets/13%20%281%29.png) ![](.gitbook/assets/14.png)![](.gitbook/assets/15.png)![](.gitbook/assets/16.png)
+Cross entropy loss ![](<.gitbook/assets/13 (1).png>) ![](<.gitbook/assets/14 (1).png>)![](<.gitbook/assets/15 (1).png>)![](<.gitbook/assets/16 (1).png>)
 
 **Picture source: CMU Practical Data Scienct Fall 2019 lecture notes**
 
 loss function for regression
 
-Mean square Error/ RMSE = ![](.gitbook/assets/17.png) Mean absolute error MAE
+Mean square Error/ RMSE = ![](<.gitbook/assets/17 (1).png>) Mean absolute error MAE
 
 MAE vs. RMSE
 
@@ -250,19 +250,19 @@ From an interpretation standpoint, MAE is clearly the winner. RMSE does not desc
 
 A loss function is a measurement of model misﬁt as a function of the model parameters. Loss functions are more general than solely MLE.
 
-MLE is a speciﬁc type of probability model estimation, where the loss function is the \(log\) likelihood. To paraphrase Matthew Drury's comment, MLE is one way to justify loss functions for probability models.
+MLE is a speciﬁc type of probability model estimation, where the loss function is the (log) likelihood. To paraphrase Matthew Drury's comment, MLE is one way to justify loss functions for probability models.
 
 #### Batching learning vs. online learning
 
 Batch learning: Learn from all the examples at once
 
-Online learning: Gradually learn as each example is received \(error driven\) Example:
+Online learning: Gradually learn as each example is received (error driven) Example:
 
 stock market prediction
 
-Email classiﬁcation \(distribution of both spam and regular mail changes over time, but the target
+Email classiﬁcation (distribution of both spam and regular mail changes over time, but the target
 
-function stays ﬁxed - last year's spam still looks like spam\) Recommendation system
+function stays ﬁxed - last year's spam still looks like spam) Recommendation system
 
 Ad placement in a new market Algorithm
 
@@ -276,18 +276,18 @@ Confusion Matrix
 
 picture source: [https://towardsdatascience.com/handling-imbalanced-datasets-in-machine-learning-7a0e84220f28](https://towardsdatascience.com/handling-imbalanced-datasets-in-machine-learning-7a0e84220f28)
 
-|  | Predicted Positive | Predicted Negative |
-| :--- | :--- | :--- |
-| True Positive | TP | FN |
-| True Negative | FP | TN |
+|               | Predicted Positive | Predicted Negative |
+| ------------- | ------------------ | ------------------ |
+| True Positive | TP                 | FN                 |
+| True Negative | FP                 | TN                 |
 
-Accuracy ![](.gitbook/assets/20.png)
+Accuracy ![](<.gitbook/assets/20 (1).png>)
 
-Recall/sensitivity/true positive rate: ![](.gitbook/assets/21%20%281%29.png) ![](.gitbook/assets/22.png) Sensitive to imbalanced data
+Recall/sensitivity/true positive rate: ![](<.gitbook/assets/21 (1).png>) ![](<.gitbook/assets/22 (1).png>) Sensitive to imbalanced data
 
 How many positive cases has been correctly classiﬁed High recall indicated the class the correctly recognized
 
-Precision ![](.gitbook/assets/23.png) ![](.gitbook/assets/24.png)
+Precision ![](<.gitbook/assets/23 (1).png>) ![](<.gitbook/assets/24 (1).png>)
 
 Sensitive to imbalanced data
 
@@ -295,11 +295,11 @@ Among all positive predicted cases, how many are correct
 
 High precision indicated an example labled as positive is indeed positive
 
-High recall, low precision: most of the positive examples are correctly recognized \(low FN\) but there are a lot of false positives. The class is well detected but the model also include points of other classes in it
+High recall, low precision: most of the positive examples are correctly recognized (low FN) but there are a lot of false positives. The class is well detected but the model also include points of other classes in it
 
-Low recall, high precision: miss a lot of positive examples \(high FN\) but those we predict as positive are indeed positive \(low FP\). The model can’t detect the class well but is highly trustable when it does
+Low recall, high precision: miss a lot of positive examples (high FN) but those we predict as positive are indeed positive (low FP). The model can’t detect the class well but is highly trustable when it does
 
-F1 score ![](.gitbook/assets/25%20%281%29.png) , harmonic mean of precision and recall Speciﬁcity/true negative rate ![](.gitbook/assets/26.png)
+F1 score ![](<.gitbook/assets/25 (1).png>) , harmonic mean of precision and recall Speciﬁcity/true negative rate ![](<.gitbook/assets/26 (1).png>)
 
 Example of analyze FP and FN
 
@@ -321,13 +321,13 @@ In quality control: a defective item passes through the cracks Software testing:
 
 ROC/AUC
 
-ROC/AUC: recall vs 1- speciﬁcity\(FPR\)
+ROC/AUC: recall vs 1- speciﬁcity(FPR)
 
-![](.gitbook/assets/28%20%281%29.png) ![](.gitbook/assets/29.png)
+![](<.gitbook/assets/28 (1).png>) ![](<.gitbook/assets/29 (1).png>)
 
 Reference:[https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)
 
-ROC curve illustrates the performance of a binary classiﬁcation model. The Area Under the Curve \(AUC\) signiﬁeshow good the classiﬁer model is. If the value for AUC is high \(near 1\), thenthe model is working satisfactorily, whereas if the value is low \(around 0.5\),then the model is not working properly and just guessing randomly.
+ROC curve illustrates the performance of a binary classiﬁcation model. The Area Under the Curve (AUC) signiﬁeshow good the classiﬁer model is. If the value for AUC is high (near 1), thenthe model is working satisfactorily, whereas if the value is low (around 0.5),then the model is not working properly and just guessing randomly.
 
 Precision-recall curves
 
@@ -335,25 +335,25 @@ don't consider true negatives, should be used when speciﬁcity is of no concern
 
 ## PAC Learning
 
-Stands for Probably Approximately Correct Learning, goal of PAC learning is to bound ![](.gitbook/assets/30%20%281%29.png) in terms of ![](.gitbook/assets/31.png)
+Stands for Probably Approximately Correct Learning, goal of PAC learning is to bound ![](<.gitbook/assets/30 (1).png>) in terms of ![](<.gitbook/assets/31 (1).png>)
 
 ## Measures
 
-![](file:///C:/Users/ldhan/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)  
+![](file:///C:/Users/ldhan/AppData/Local/Temp/msohtmlclip1/01/clip\_image002.jpg) &#x20;
 
 Binary Classification
 
-![](.gitbook/assets/image%20%2853%29.png)
+![](<.gitbook/assets/image (6).png>)
 
 ## Terminology
 
-![](.gitbook/assets/image%20%2831%29.png)
+![](.gitbook/assets/image.png)
 
-![](.gitbook/assets/image%20%2864%29.png)
+![](<.gitbook/assets/image (2).png>)
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](<.gitbook/assets/image (3).png>)
 
-![](.gitbook/assets/image%20%281%29.png)
+![](<.gitbook/assets/image (5).png>)
 
 ## Nearest Neighbor Classifier
 
@@ -361,19 +361,19 @@ Binary Classification
 
 **test**: predict the lable by ﬁnding the closest image in the training set and need a measure of **distance**
 
-![](.gitbook/assets/image%20%2836%29.png)
+![](<.gitbook/assets/image (7).png>)
 
 ## K - nearest neighbors
 
-**training**: do nothing \(lazy learning\)
+**training**: do nothing (lazy learning)
 
 **test**: predict the lable by ﬁnding the K closest instances
 
-![](.gitbook/assets/image%20%2826%29.png)
+![](<.gitbook/assets/image (8).png>)
 
-![](.gitbook/assets/image%20%2870%29.png)
+![](<.gitbook/assets/image (9).png>)
 
-a non-parametric method: the number of model parameters **grows** with the data this is in contrast with a **parametric model** which has a **ﬁxed** number of parameters, is faster to use but has stronger assumptions on the nature of the data distribution 
+a non-parametric method: the number of model parameters **grows** with the data this is in contrast with a **parametric model** which has a **ﬁxed** number of parameters, is faster to use but has stronger assumptions on the nature of the data distribution&#x20;
 
 **KNN works well if input has low dimensions**
 
@@ -381,7 +381,7 @@ a non-parametric method: the number of model parameters **grows** with the data 
 
 High dim are unintuitive
 
-·         need exponentially more instances for K-NN to work \(more data\)
+·         need exponentially more instances for K-NN to work (more data)
 
 ·         with same number of instances, the space becomes very sparse
 
@@ -389,9 +389,9 @@ High dim are unintuitive
 
 ## Manifold Hypothesis
 
-In the real-world, high-dim data lie close to the surface of a manifold \(多支管\)/low-dim
+In the real-world, high-dim data lie close to the surface of a manifold (多支管)/low-dim
 
-![](.gitbook/assets/image%20%286%29.png)
+![](<.gitbook/assets/image (10).png>)
 
 ## Model Selection
 
@@ -401,49 +401,47 @@ Example: KNN – k is the hyper-parameter, k up classification boundary smoother
 
 Generalization: performance of algorithm on unseen data
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (11).png>)
 
 ## Hyperparameter Tuning
 
-Training \(used to train the model\),
+Training (used to train the model),
 
-Testing \(used to evaluate the final model\),
+Testing (used to evaluate the final model),
 
-Validation dataset \(used to tune the hyperparameter\).
+Validation dataset (used to tune the hyperparameter).
 
 Performance on validation set ≈ generalizationError
 
 ### K-folder cross validation CV
 
-·         ![](file:///C:/Users/ldhan/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)partition the data into k folds
+·         ![](file:///C:/Users/ldhan/AppData/Local/Temp/msohtmlclip1/01/clip\_image022.jpg)partition the data into k folds
 
 ·         use k-1 for training, and 1 for validation
 
 ·         average the validation error over all folds
 
-![](.gitbook/assets/image%20%2832%29.png)
+![](<.gitbook/assets/image (12).png>)
 
 ### Leave-one-out CV
 
 Extreme case of k = N
 
-## Inductive \(归纳的\) Bias
+## Inductive (归纳的) Bias
 
 ML algorithms need to make assumptions about the problem
 
 Every machine learning algorithm with any ability to generalize beyond the training data that it sees has some type of inductive bias, which are the assumptions made by the model to learn the target function and to generalize beyond training data.
 
-For example, in linear regression, the model assumes that the output or dependent variable is related to independent variable linearly \(in the weights\). This is an inductive bias of the model.
+For example, in linear regression, the model assumes that the output or dependent variable is related to independent variable linearly (in the weights). This is an inductive bias of the model.
 
 inductive bias: strength and correctness of assumptions are important in having good performance
 
 Examples:
 
-·         manifold hypothesis in KNN \(and many other methods\)
+·         manifold hypothesis in KNN (and many other methods)
 
 ·         close to linear dependencies in linear regression
 
 ·         conditional independence and causal structure in probabilistic graphical models
-
-
 
