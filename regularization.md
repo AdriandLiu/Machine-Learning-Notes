@@ -13,6 +13,10 @@ Neural net regularization:&#x20;
 * dropout: randomly deactivate some neurons in hidden layer
 * batch normalization: normalize the batch of data based on its mean and standard deviation, which will lower the influence of some large values to the gradient update, so that the weight wouldn't be very large (pay too much attention)
 
+
+
+**The main intuitive difference between the L1 and L2 regularization is that L1 regularization tries to estimate the median of the data while the L2 regularization tries to estimate the mean of the data to avoid overfitting**.
+
 ## How regularization work, L2 e.g.
 
 ![](<.gitbook/assets/image (87).png>)
@@ -27,7 +31,7 @@ why $$\lambda$$ is large, weight become close to zero:
 
 ![](<.gitbook/assets/image (90).png>)
 
-take the partial derivate of w (calculate gradient), and we can see that when** lambda is very large, w - lambda\*w will make the w close to zero**
+take the partial derivate of w (calculate gradient), and we can see that when **lambda is very large, w - lambda\*w will make the w close to zero**
 
 ## Why regularization work
 
