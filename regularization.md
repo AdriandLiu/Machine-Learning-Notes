@@ -17,6 +17,14 @@ Neural net regularization:&#x20;
 
 **The main intuitive difference between the L1 and L2 regularization is that L1 regularization tries to estimate the median of the data while the L2 regularization tries to estimate the mean of the data to avoid overfitting**.
 
+
+
+### Regularization in DL
+
+by adding a parameter norm penalty Ω(θ) to the objective function J of the DL model
+
+{% embed url="https://medium.com/analytics-vidhya/regularization-understanding-l1-and-l2-regularization-for-deep-learning-a7b9e4a409bf" %}
+
 ## How regularization work, L2 e.g.
 
 ![](<.gitbook/assets/image (87).png>)
