@@ -47,6 +47,12 @@ for classiﬁcation problem, if the data is unbalanced, we need to consider what
 
 Example: detecting fraud - classiﬁcation; want to make sure catch fraud transactions; imbalance dataset
 
+### MAE OR RMSE
+
+The main difference between MAE and RMSE is that RMSE is **more sensitive to outliers** and **large errors** than MAE. This is because RMSE squares the errors before averaging them, which gives more weight to larger errors. MAE, on the other hand, treats all errors equally and is more robust to outliers.
+
+The choice of MAE or RMSE depends on the context and the goal of the analysis. If you want to **penalize large errors more and avoid occasional large mistakes in your predictions, then RMSE** might be a better option. However, if you want an error metric that is more interpretable and treats all errors equally, then MAE might be more suitable. You can also use both metrics to compare different models and see how they perform on different aspects of the data.
+
 ## Imbalanced dataset
 
 Random undersampling and oversampling
